@@ -1,15 +1,8 @@
-let slideNum = 1,
-	inconsolata;
-
-function preload() {
-  inconsolata = loadFont('assets/inconsolata.otf');
-}
+let slideNum = 1;
+	numOfSlides = 10;
 
 function setup(){
-  createCanvas(windowWidth,windowHeight, WEBGL);
-  textFont(inconsolata);
-  textSize(width / 3);
-  textAlign(CENTER, CENTER);
+  createCanvas(windowWidth,windowHeight);
 }
 
 function draw(){
@@ -19,23 +12,29 @@ function draw(){
 
   	//show slide number
   	fill(255);
-	text(slideNum, 10, 10, 70, 80);
+	text(slideNum, width-55, 40, 70, 80);
 }
 
-function mouseClicked(event) {
-	slideNum++;  
+function keyPressed() {
+	if (keyCode === RIGHT_ARROW) {
+		if (slideNum<numOfSlides){
+			slideNum++;
+		}
+	} else if (keyCode === LEFT_ARROW) {	
+		if (slideNum>1){
+			slideNum--;
+		}
+	}
+  	
 }
-
 
 function showSlide(){
 	if(slideNum === 1){
-		fill(255);
-		text(slideNum, 10, 10, 70, 80);
+		
 	}
 
 	if(slideNum === 2){
-		fill(255);
-		text(slideNum, 10, 10, 70, 80);
+		
 	}
 	
 
