@@ -1,10 +1,11 @@
 let slideNum = 1;
 	numOfSlides = 10,
-	slide1;
+	slide1, slide2;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
   slide1 = loadImage('slides/slide-01.png');
+  slide2 = loadImage('slides/slide-02.png');
 }
 
 function draw(){
@@ -34,9 +35,9 @@ function keyPressed() {
 
 function mouseClicked() {
 	console.log(slideNum + " " + mouseX + " " + mouseY);
-	if(slideNum == 1){
+	if(slideNum == 3){
 		if((mouseX > 190) && (mouseY > 150) && (mouseX < 590) && (mouseY < 230)){
-			slideNum = 3;
+			slideNum = 4;
 			console.log(slideNum);
 		}
 		if((mouseX > 190) && (mouseY > 350) && (mouseX < 590) && (mouseY < 430)){
@@ -44,10 +45,31 @@ function mouseClicked() {
 			console.log(slideNum);
 		}
 	}
+
+	if(slideNum == 8){
+		if((mouseX > 190) && (mouseY > 150) && (mouseX < 590) && (mouseY < 230)){
+			slideNum = 9;
+			console.log(slideNum);
+		}
+		if((mouseX > 190) && (mouseY > 350) && (mouseX < 590) && (mouseY < 430)){
+			slideNum = 10;
+			console.log(slideNum);
+		}
+	}
 }
 
 function showSlide(){
 	if(slideNum === 1){
+		console.log("Slide: "+slideNum);
+		image(slide1, 0, 0);
+	}
+
+	if(slideNum === 2){
+		console.log("Slide: "+slideNum);
+		image(slide2, 0, 0);
+	}
+
+	if(slideNum === 3){
 		noFill()
 		strokeWeight(4);
 		stroke('#00ff88');
@@ -57,7 +79,7 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Option A',200,200, 400);
+		text('rock',200,200, 400);
 
 		noFill()
 		strokeWeight(4);
@@ -68,19 +90,80 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');	
-		text('Option B',200,400, 400);
+		text('⌐ rock',200,400, 400);
 	}
 
-	if(slideNum === 2){
+	if(slideNum === 4){
 		fill(255);
 		textSize(50);
 		textFont('Helvetica-Bold');
 		text('Slide ' + slideNum,200,200, 200);
 	}
 	
-	if(slideNum === 3){
+	if(slideNum === 5){
 		console.log("Slide: "+slideNum);
 		image(slide1, 0, 0);
 	}
 
+	if(slideNum === 6){
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('easy',200,200, 400);
+
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');	
+		text('hard',200,400, 400);
+	}
+
+	if(slideNum === 7){
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('Illusionism',200,200, 400);
+	}
+
+	if(slideNum === 8){
+		noFill()
+		strokeWeight(4);
+		stroke('#00ff88');
+		rect(190, 150, 400, 80);
+
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('conceivable',200,200, 400);
+
+		noFill()
+		strokeWeight(4);
+		stroke('#00ff88');
+		rect(190, 350, 400, 80);
+		
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');	
+		text('⌐ conceivable',200,400, 400);
+	}
+
+	if(slideNum === 9){
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('meta-problem',200,200, 400);
+	}
+
+	if(slideNum === 10){
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('strong examples of illusions',200,200, 400);
+	}
 }
