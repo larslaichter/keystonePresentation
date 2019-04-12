@@ -12,6 +12,8 @@ function draw(){
 
   	//show slide number
   	fill(255);
+  	textSize(20);
+  	textFont('Helvetica-Bold');
 	text(slideNum, width-55, 40, 70, 80);
 }
 
@@ -30,11 +32,19 @@ function keyPressed() {
 
 function showSlide(){
 	if(slideNum === 1){
-		
+		fill(255);
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('Option A',200,200, 200);	
+
+		text('Option B',200,400, 200);
 	}
 
 	if(slideNum === 2){
-		
+		fill(255);
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('Slide ' + slideNum,200,200, 200);
 	}
 	
 
