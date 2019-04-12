@@ -79,6 +79,7 @@ function showSlide(){
 	}
 	
 	if(slideNum === 3){
+		console.log("Slide: "+slideNum);
 		image(slide1, 0, 0);
 	}
 
