@@ -97,12 +97,14 @@ function showSlide(){
 		fill(255);
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Slide ' + slideNum,200,200, 200);
+		text('Mary');
 	}
 	
 	if(slideNum === 5){
-		console.log("Slide: "+slideNum);
-		image(slide1, 0, 0);
+		fill(255);
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('Rock person');
 	}
 
 	if(slideNum === 6){
@@ -165,5 +167,13 @@ function showSlide(){
 		textSize(50);
 		textFont('Helvetica-Bold');
 		text('strong examples of illusions',200,200, 400);
+	}
+
+	if(slideNum === 9){
+		fill(255);
+		noStroke();
+		textSize(50);
+		textFont('Helvetica-Bold');
+		text('conclusion',200,200, 400);
 	}
 }
