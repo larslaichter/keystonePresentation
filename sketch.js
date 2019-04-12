@@ -3,6 +3,7 @@ let slideNum = 1;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
+  slide1 = loadImage('slides/slide-01.png');
 }
 
 function draw(){
@@ -76,5 +77,8 @@ function showSlide(){
 		text('Slide ' + slideNum,200,200, 200);
 	}
 	
+	if(slideNum === 3){
+		image(slide1, 0, 0);
+	}
 
 }
