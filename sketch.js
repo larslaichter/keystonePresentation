@@ -1,5 +1,6 @@
 let slideNum = 1;
-	numOfSlides = 10;
+	numOfSlides = 10,
+	slide1;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
