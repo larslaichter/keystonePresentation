@@ -61,7 +61,7 @@ function mouseClicked() {
 function showSlide(){
 	if(slideNum === 1){
 		console.log("Slide: "+slideNum);
-		image(slide1, 0, 0);
+		image(slide1, 0, 0, windowWidth, slide1.height);
 	}
 
 	if(slideNum === 2){
@@ -166,7 +166,7 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('strong examples of illusions',200,200, 400);
+		text('strong examples of illusions',200,200, 800);
 	}
 
 	if(slideNum === 11){
