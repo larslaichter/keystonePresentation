@@ -1,5 +1,5 @@
 let slideNum = 1;
-	numOfSlides = 10,
+	numOfSlides = 11,
 	slide1, slide2;
 
 function setup(){
@@ -169,7 +169,7 @@ function showSlide(){
 		text('strong examples of illusions',200,200, 400);
 	}
 
-	if(slideNum === 9){
+	if(slideNum === 11){
 		fill(255);
 		noStroke();
 		textSize(50);
