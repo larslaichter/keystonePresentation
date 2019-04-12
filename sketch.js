@@ -97,14 +97,14 @@ function showSlide(){
 		fill(255);
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Mary');
+		text('Mary',200,200, 400);
 	}
 	
 	if(slideNum === 5){
 		fill(255);
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Rock person');
+		text('Rock person',200,200, 400);
 	}
 
 	if(slideNum === 6){
