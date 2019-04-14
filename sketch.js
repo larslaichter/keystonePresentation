@@ -67,6 +67,12 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('rock',220,450, 400);
 
+		fill(255);
+		noStroke();
+		textSize(20);
+		textFont('Helvetica-Bold');	
+		text('A',210, 280, 400);
+
 		noFill()
 		strokeWeight(8);
 		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
