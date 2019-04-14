@@ -71,7 +71,7 @@ function showSlide(){
 		noStroke();
 		textSize(20);
 		textFont('Helvetica-Bold');	
-		text('A',210, 280, 400);
+		text('A',210, 270, 400);
 
 		noFill()
 		strokeWeight(8);
@@ -82,7 +82,7 @@ function showSlide(){
 		noStroke();
 		textSize(20);
 		textFont('Helvetica-Bold');	
-		text('B',830, 280, 400);
+		text('B',830, 270, 400);
 
 		fill(255);
 		noStroke();
