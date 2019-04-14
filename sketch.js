@@ -88,7 +88,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');	
-		text('⌐ rock',850,400, 400);
+		text('⌐ rock',850,450, 400);
 	}
 
 	if(slideNum === 4){
