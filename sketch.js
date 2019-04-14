@@ -74,6 +74,12 @@ function showSlide(){
 		
 		fill(255);
 		noStroke();
+		textSize(20);
+		textFont('Helvetica-Bold');	
+		text('B',830, 250, 400);
+
+		fill(255);
+		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');	
 		text('⌐ rock',850,400, 400);
