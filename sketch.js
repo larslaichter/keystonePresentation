@@ -9,7 +9,7 @@ function setup(){
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
-  fingers = createVideo(['assets/bat.mp4', 'assets/fingers.webm']);
+  whatIsItLike = createVideo(['assets/bat.mp4']);
 }
 
 function draw(){
