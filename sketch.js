@@ -1,6 +1,5 @@
 let slideNum = 1,
 	frameNum = 0;
-	capture,
 	numOfSlides = 11,
 	slide1, slide2;
 
@@ -8,9 +7,6 @@ function setup(){
   createCanvas(windowWidth,windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
-
-  capture = createCapture(VIDEO);
-  capture.size(620, 480);
 }
 
 function draw(){
@@ -85,19 +81,16 @@ function showSlide(){
 
 	if(slideNum === 4){
 		fill(255);
-		textSize(50);
+		textSize(20);
 		textFont('Helvetica-Bold');
-		text('Mary',200,200, 400);
-
-		image(capture, 0, 0, 320, 240);
-  		filter('GRAY');
+		text('Mary',10,10, 400);
 	}
 	
 	if(slideNum === 5){
 		fill(255);
-		textSize(50);
+		textSize(20);
 		textFont('Helvetica-Bold');
-		text('Rock person',200,200, 400);
+		text('Rock person',10,10, 400);
 	}
 
 	if(slideNum === 6){
