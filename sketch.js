@@ -73,7 +73,7 @@ function showSlide(){
 		noFill()
 		strokeWeight(4);
 		stroke('#00ff88');
-		rect(190, 150, 400, 80);
+		rect(190, 150, 400, 400);
 
 		fill(255);
 		noStroke();
