@@ -12,7 +12,7 @@ function setup(){
   slide2 = loadImage('slides/slide-02.png');
 
   whatIsItLike = createVideo('assets/bat.mp4');
-  vid.size(1280, 720); //windowWidth, vid.height
+  whatIsItLike.size(1280, 720); //windowWidth, vid.height
 }
 
 function draw(){
@@ -21,7 +21,7 @@ function draw(){
 	showSlide();
   	print(mouseIsPressed);
 
-  	vid.loop();
+  	whatIsItLike.loop();
   	//vid.volume(0);
 
   	//show slide number
