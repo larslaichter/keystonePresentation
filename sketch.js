@@ -110,7 +110,7 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('easy',200,200, 400);
+		text('easy 😴  × hard 🤯',200,200, 400);
 
 		fill(255);
 		noStroke();
