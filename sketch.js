@@ -1,5 +1,6 @@
 let slideNum = 1,
 	frameNum = 0;
+	capture,
 	numOfSlides = 11,
 	slide1, slide2;
 
