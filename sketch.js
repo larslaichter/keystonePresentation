@@ -1,4 +1,5 @@
-let slideNum = 1;
+let slideNum = 1,
+	frameNum = 0;
 	numOfSlides = 11,
 	slide1, slide2;
 
@@ -6,9 +7,13 @@ function setup(){
   createCanvas(windowWidth,windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
+
+  capture = createCapture(VIDEO);
+  capture.size(620, 480);
 }
 
 function draw(){
+	frameNum++; 
 	background(0);
 	showSlide();
   	print(mouseIsPressed);
@@ -30,33 +35,17 @@ function keyPressed() {
 		if (slideNum > 1){
 			slideNum--;
 		}
-	}
-}
-
-function mouseClicked() {
-	console.log(slideNum + " " + mouseX + " " + mouseY);
-	if(slideNum == 3){
-		if((mouseX > 190) && (mouseY > 150) && (mouseX < 590) && (mouseY < 230)){
-			slideNum = 4;
-			console.log(slideNum);
+	} else if (keyCode === 65) {	//A
+		if (slideNum === 3){
+			slideNum = 4; 
 		}
-		if((mouseX > 190) && (mouseY > 350) && (mouseX < 590) && (mouseY < 430)){
-			slideNum = 5;
-			console.log(slideNum);
-		}
-	}
-
-	if(slideNum == 8){
-		if((mouseX > 190) && (mouseY > 150) && (mouseX < 590) && (mouseY < 230)){
-			slideNum = 9;
-			console.log(slideNum);
-		}
-		if((mouseX > 190) && (mouseY > 350) && (mouseX < 590) && (mouseY < 430)){
-			slideNum = 10;
-			console.log(slideNum);
+	} else if (keyCode === 66) {	//B
+		if (slideNum === 3){
+			slideNum = 5; 
 		}
 	}
 }
+
 
 function showSlide(){
 	if(slideNum === 1){
@@ -71,26 +60,26 @@ function showSlide(){
 
 	if(slideNum === 3){
 		noFill()
-		strokeWeight(4);
-		stroke('#00ff88');
-		rect(190, 150, 400, 400);
+		strokeWeight(8);
+		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
+		rect(190, 230, 400, 400);
 
-		fill(255);
+		fill(255);	
 		noStroke();
-		textSize(50);
+		textSize(100);
 		textFont('Helvetica-Bold');
-		text('rock',200,200, 400);
+		text('rock',220,450, 400);
 
 		noFill()
-		strokeWeight(4);
-		stroke('#00ff88');
-		rect(190, 350, 400, 80);
+		strokeWeight(8);
+		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
+		rect(810, 230, 400, 400);
 		
 		fill(255);
 		noStroke();
-		textSize(50);
+		textSize(100);
 		textFont('Helvetica-Bold');	
-		text('⌐ rock',200,400, 400);
+		text('⌐ rock',850,400, 400);
 	}
 
 	if(slideNum === 4){
@@ -98,6 +87,9 @@ function showSlide(){
 		textSize(50);
 		textFont('Helvetica-Bold');
 		text('Mary',200,200, 400);
+
+		image(capture, 0, 0, 320, 240);
+  		filter('INVERT');
 	}
 	
 	if(slideNum === 5){
