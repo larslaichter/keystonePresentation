@@ -1,7 +1,7 @@
 let slideNum = 1,
 	frameNum = 0;
 	numOfSlides = 11,
-	whatIsItLike,
+	//whatIsItLike,
 	slide1, slide2;
 
 function setup(){
@@ -9,7 +9,7 @@ function setup(){
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
-  whatIsItLike = createVideo(['assets/bat.mp4']);
+  //whatIsItLike = createVideo(['assets/bat.mp4']);
 }
 
 function draw(){
@@ -112,7 +112,7 @@ function showSlide(){
 	}
 
 	if(slideNum === 7){
-		whatIsItLike.loop();
+		//whatIsItLike.loop();
 
 		fill(255);
 		noStroke();
