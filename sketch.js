@@ -95,14 +95,14 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Mary 👩🏽‍🔬',40,40, 400);
+		text('Mary 👩🏽‍🔬',40,80, 400);
 	}
 	
 	if(slideNum === 5){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('A rock person 🗿',40,40, 400);
+		text('A rock person 🗿',40,80, 400);
 	}
 
 	if(slideNum === 6){
@@ -110,7 +110,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😴) × (hard 🤯)',200,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',300,(windowHeight/2)-35, 1000);
 	}
 
 	if(slideNum === 7){
