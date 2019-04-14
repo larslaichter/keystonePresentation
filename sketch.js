@@ -1,12 +1,15 @@
 let slideNum = 1,
 	frameNum = 0;
 	numOfSlides = 11,
+	whatIsItLike,
 	slide1, slide2;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
+
+  fingers = createVideo(['assets/bat.mp4', 'assets/fingers.webm']);
 }
 
 function draw(){
@@ -49,12 +52,10 @@ function showSlide(){
 		console.log("Slide: "+slideNum);
 		image(slide1, 0, 0, windowWidth, slide1.height);
 	}
-
 	if(slideNum === 2){
 		console.log("Slide: "+slideNum);
 		image(slide2, 0, 0);
 	}
-
 	if(slideNum === 3){
 		noFill()
 		strokeWeight(8);
@@ -90,35 +91,34 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('⌐ rock',850,450, 400);
 	}
-
 	if(slideNum === 4){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Mary 👩🏽‍🔬',40,80, 400);
 	}
-	
 	if(slideNum === 5){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('A rock person 🗿',40,80, 400);
 	}
-
 	if(slideNum === 6){
 		fill(255);
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',300,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',500,(windowHeight/2)-35, 1000);
 	}
 
 	if(slideNum === 7){
+		whatIsItLike.loop();
+
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('(what is it like?',200,(windowHeight/2)-100, 1000);
+		text('What is it like?',200,(windowHeight/2)-100, 1000);
 	}
 
 	if(slideNum === 8){
