@@ -1,5 +1,5 @@
 let slideNum = 1,
-	frameNum = 0;
+	frameNum = 0,
 	numOfSlides = 11,
 	slide1, slide2;
 
