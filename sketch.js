@@ -7,12 +7,13 @@ let slideNum = 1,
 		
 
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth,windowWidth);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
   whatIsItLike = createVideo('assets/bat.mp4');
-  whatIsItLike.size(1280, 720); //windowWidth, vid.height
+  whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
+  whatIsItLike.hide();
 }
 
 function draw(){
@@ -20,9 +21,6 @@ function draw(){
 	background(0);
 	showSlide();
   	print(mouseIsPressed);
-
-  	whatIsItLike.loop();
-  	//vid.volume(0);
 
   	//show slide number
   	fill(255);
@@ -118,7 +116,9 @@ function showSlide(){
 	}
 
 	if(slideNum === 7){
-		
+		whatIsItLike.play();
+		image(whatIsItLike, 0, 0);
+  		//whatIsItLike.volume(0);
 
 		fill(255);
 		noStroke();
