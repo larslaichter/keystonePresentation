@@ -109,7 +109,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',500,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',450,(windowHeight/2)-35, 1000);
 	}
 
 	if(slideNum === 7){
