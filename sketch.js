@@ -1,16 +1,17 @@
 let slideNum = 1,
 	frameNum = 0,
 	numOfSlides = 11,
+	whatIsItLike,
 	slide1, slide2;
 
-		//whatIsItLike,
+		
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
-  //whatIsItLike = createVideo(['assets/bat.mp4']);
+  whatIsItLike = createVideo(['assets/bat.mp4']);
 }
 
 function draw(){
@@ -109,11 +110,11 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',450,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',430,(windowHeight/2)-35, 1000);
 	}
 
 	if(slideNum === 7){
-		//whatIsItLike.loop();
+		whatIsItLike.loop();
 
 		fill(255);
 		noStroke();
