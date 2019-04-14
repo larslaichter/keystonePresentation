@@ -122,9 +122,9 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(100);
+		textSize(70);
 		textFont('Helvetica-Bold');
-		text('What is it like?',200,(windowHeight)-100, 1000);
+		text('What is it like?',600,(windowHeight)-70, 1000);
 	}
 
 	if(slideNum === 8){
