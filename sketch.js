@@ -1,8 +1,9 @@
 let slideNum = 1,
 	frameNum = 0;
 	numOfSlides = 11,
-	//whatIsItLike,
 	slide1, slide2;
+
+		//whatIsItLike,
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
