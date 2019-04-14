@@ -70,7 +70,7 @@ function showSlide(){
 		noFill()
 		strokeWeight(8);
 		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
-		rect(810, 230, 400, 400);
+		rect(810, 230, 450, 400);
 		
 		fill(255);
 		noStroke();
@@ -83,14 +83,14 @@ function showSlide(){
 		fill(255);
 		textSize(20);
 		textFont('Helvetica-Bold');
-		text('Mary',10,10, 400);
+		text('Mary',40,40, 400);
 	}
 	
 	if(slideNum === 5){
 		fill(255);
 		textSize(20);
 		textFont('Helvetica-Bold');
-		text('Rock person',10,10, 400);
+		text('A rock person',40,40, 400);
 	}
 
 	if(slideNum === 6){
