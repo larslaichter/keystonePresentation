@@ -21,16 +21,16 @@ function draw(){
 }
 
 function keyPressed() {
+	console.log(keyCode)
 	if (keyCode === RIGHT_ARROW) {
-		if (slideNum<numOfSlides){
+		if (slideNum < numOfSlides){
 			slideNum++;
 		}
 	} else if (keyCode === LEFT_ARROW) {	
-		if (slideNum>1){
+		if (slideNum > 1){
 			slideNum--;
 		}
 	}
-  	
 }
 
 function mouseClicked() {
@@ -177,3 +177,14 @@ function showSlide(){
 		text('conclusion',200,200, 400);
 	}
 }
+
+
+
+/*
+NOTES
+
+Illusions: 
+	– visual: https://twitter.com/Keith_Laws/status/1066092338315968513/photo/1
+ 	– sound: https://soundcloud.com/whyy-the-pulse/an-audio-illusion
+	– global: vision field
+*/
