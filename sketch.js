@@ -89,7 +89,7 @@ function showSlide(){
 		text('Mary',200,200, 400);
 
 		image(capture, 0, 0, 320, 240);
-  		filter('INVERT');
+  		filter('GRAY');
 	}
 	
 	if(slideNum === 5){
