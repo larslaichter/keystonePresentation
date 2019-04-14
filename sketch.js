@@ -11,7 +11,7 @@ function setup(){
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
-  whatIsItLike = createVideo(['assets/bat.mp4'], vidLoad);
+  whatIsItLike = createVideo(['assets/bat.mp4']);
   vid.size(windowWidth, vid.height);
 }
 
