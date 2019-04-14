@@ -12,7 +12,7 @@ function setup(){
   slide2 = loadImage('slides/slide-02.png');
 
   whatIsItLike = createVideo('assets/bat.mp4');
-  whatIsItLike.width(windowWidth); //windowWidth, vid.height
+  whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
   whatIsItLike.hide();
 }
 
@@ -124,7 +124,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('What is it like?',200,(windowHeight/2)-100, 1000);
+		text('What is it like?',200,(windowHeight)-100, 1000);
 	}
 
 	if(slideNum === 8){
