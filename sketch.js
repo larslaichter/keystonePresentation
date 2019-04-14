@@ -12,7 +12,7 @@ function setup(){
   slide2 = loadImage('slides/slide-02.png');
 
   whatIsItLike = createVideo(['assets/bat.mp4']);
-  vid.size(windowWidth, vid.height);
+  vid.size(1280, 720); //windowWidth, vid.height
 }
 
 function draw(){
