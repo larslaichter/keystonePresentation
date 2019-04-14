@@ -76,7 +76,7 @@ function showSlide(){
 		noStroke();
 		textSize(20);
 		textFont('Helvetica-Bold');	
-		text('B',830, 260, 400);
+		text('B',830, 280, 400);
 
 		fill(255);
 		noStroke();
