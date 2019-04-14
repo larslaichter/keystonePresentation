@@ -11,7 +11,7 @@ function setup(){
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
-  whatIsItLike = createVideo(['assets/bat.mp4']);
+  whatIsItLike = createVideo('assets/bat.mp4');
   vid.size(1280, 720); //windowWidth, vid.height
 }
 
@@ -20,6 +20,9 @@ function draw(){
 	background(0);
 	showSlide();
   	print(mouseIsPressed);
+
+  	vid.loop();
+  	//vid.volume(0);
 
   	//show slide number
   	fill(255);
@@ -115,8 +118,7 @@ function showSlide(){
 	}
 
 	if(slideNum === 7){
-		vid.loop();
-  		vid.volume(0);
+		
 
 		fill(255);
 		noStroke();
