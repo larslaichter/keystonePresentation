@@ -61,7 +61,7 @@ function keyPressed() {
 		}
 	} else if (keyCode === 70) {	//B
 		if (slideNum === 4){
-			filterOn = false; 
+			filterOn = !filterOn; 
 		}
 	}
 }
