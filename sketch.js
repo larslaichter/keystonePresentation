@@ -31,7 +31,7 @@ function draw(){
   	fill(255);
   	textSize(20);
   	textFont('Helvetica-Bold');
-	text(slideNum, width-55, 40, 70, 80);
+	text(slideNum + "/" + numOfSlides, width-55, 40, 70, 80);
 }
 
 function keyPressed() {
