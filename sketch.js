@@ -263,7 +263,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion example 1/3',40,80, 600);
 
-		image(illusion1, 400, 280, 469, 330);
+		image(illusion1, 500, 280, 469, 330);
 	}
 	if(slideNum === 12){
 		fill(255);
@@ -317,8 +317,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀x)(∃o)(IPxP o≡(RIxP o∧ ¬P o)∨(RIx¬Po ∧ Po))',150,300, 1000);
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',150,400, 1000);
+		text('(∀x)(∃o)(IPxP o≡(RIxP o∧ ¬P o)∨(RIx¬Po ∧ Po))',100,300, 1500);
+		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',100,400, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -330,8 +330,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀x)(∃o)(IExo≡(RIxE!o∧ ¬E!o)∨(RIx¬E!o∧E!o))',150,300, 1000);
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',150,400, 1000);
+		text('(∀x)(∃o)(IExo≡(RIxE!o∧ ¬E!o)∨(RIx¬E!o∧E!o))',100,300, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',100,400, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -339,8 +339,8 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 3/3',40,80, 600);
 
-		text('((∀x)(∃o)(ISx[o∨P o]≡[(RIxE!o∧¬E!o)∨(RIx¬E!o∧E!o)]∨[(RIxP o∧ ¬P o)∨(RIx¬P o∧P o)])',150,300, 1000);
-		text('(∀😺(∃🐭)(🤩 iff 😻 or 🙀)',150,400, 1000);
+		text('((∀x)(∃o)(ISx[o ∨ Po]≡[(RIxE!o∧¬E!o)∨(RIx¬E!o∧E!o)]∨[(RIxP o∧ ¬Po)∨(RIx¬P o∧Po)])',100,300, 1500);
+		text('(∀😺(∃🐭)(🤩 iff 😻 or 🙀)',100,500, 15000);
 	}
 	if(slideNum === 18){
 		fill(255);
@@ -378,6 +378,7 @@ NOTES
 
 Illusions: 
 	– visual: https://twitter.com/Keith_Laws/status/1066092338315968513/photo/1
+ 		https://www.theverge.com/2016/9/12/12885574/optical-illusion-12-black-dots
  	– sound: https://soundcloud.com/whyy-the-pulse/an-audio-illusion
 	– global: vision field Qualitative representation of visual detail using a single glance of the eyes.
 		https://www.cambridgeincolour.com/tutorials/cameras-vs-human-eye.htm
