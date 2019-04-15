@@ -343,7 +343,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Criteria',40,80, 600);
+		text('Illusion of consciousness criteria',40,80, 1000);
 
 		fill(255);
 		noStroke();
