@@ -401,7 +401,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('larslaichter.com/keystone',300,(windowHeight/2)+65, 1000);
+		text('larslaichter.com/keystone',300,(windowHeight/2), 1000);
 	}
 }
 
