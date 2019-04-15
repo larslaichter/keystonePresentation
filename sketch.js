@@ -350,8 +350,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',280,350, 1500);
+		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,350, 1500);
+		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',180,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -363,8 +363,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',280,350, 1500);
+		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,350, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',180,450, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -372,8 +372,8 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('Tools: an agent 😺, an object 🐭, property illusion 😻, existence illusion 🙀',180,450, 1500);
-		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',550,420, 1500);
+		text('Tools: an agent 😺, an object 🐭, property illusion 😻, existence illusion 🙀',200,350, 1500);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',200,420, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
