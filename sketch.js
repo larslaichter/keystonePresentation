@@ -114,13 +114,14 @@ function showSlide(){
 		text('⌐ rock',850,450, 400);
 	}
 	if(slideNum === 4){
+		capture.start()
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Marry 👩🏽‍🔬',40,80, 400);
 
 
-  		image(capture, (windowWidth/2)-320, (windowHeight/2)-240, 320, 240);
+  		image(capture, (windowWidth/2), (windowHeight/2), 320, 240);
   		if(filterOn==true){filter(GRAY);};
 	}
 	if(slideNum === 5){
