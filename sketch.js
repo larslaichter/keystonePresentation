@@ -134,6 +134,13 @@ function showSlide(){
 			if (ypos > 650 - 10 || ypos < 250) {
 			  	ydirection *= -1;
 			}
+		} else {
+			if (xpos > windowWidth || xpos < 30) {
+	    		xdirection *= -1;
+			}
+			if (ypos > windowHeight || ypos < 30) {
+			  	ydirection *= -1;
+			}
 		}
 
 		fill(255);
@@ -147,7 +154,7 @@ function showSlide(){
 			stroke(255);
 			rect(520, 250, 400, 400);
 			noStroke();
-			
+
   			filter(GRAY);
   		};
 	}
