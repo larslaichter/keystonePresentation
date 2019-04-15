@@ -260,7 +260,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion example 1/3',40,80, 600);
 
-		image(illusion1, 400, 400);
+		image(illusion1, 200, 200, 938, 660);
 	}
 	if(slideNum === 12){
 		fill(255);
