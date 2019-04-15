@@ -117,6 +117,9 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Marry',40,80, 400);
 
+		xpos = width / 2;
+  		ypos = height / 2;
+
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
  		ypos = ypos + yspeed * ydirection;
@@ -130,8 +133,6 @@ function showSlide(){
 		  ydirection *= -1;
 		}
 	
-		// Draw the shape
-		ellipse(xpos, ypos, rad, rad);
 
 		fill(255);
 		textSize(60);
