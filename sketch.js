@@ -20,6 +20,9 @@ function setup(){
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
   whatIsItLike.hide();
+
+  xpos = windowWidth / 2;
+  ypos = windowWidth / 2;
 }
 
 function draw(){
@@ -117,8 +120,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Marry',40,80, 400);
 
-		xpos = width / 2;
-  		ypos = height / 2;
+		
 
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
@@ -130,14 +132,14 @@ function showSlide(){
     		xdirection *= -1;
 		}
 		if (ypos > height - 10 || ypos < 10) {
-		  ydirection *= -1;
+		  	ydirection *= -1;
 		}
 	
 
 		fill(255);
 		textSize(60);
 		textFont('Helvetica-Bold');
-		text('👩🏽‍🔬',xpos, ypos, 60);
+		text('👩🏽‍🔬', xpos, ypos, 60);
 
   		if(filterOn==true){filter(GRAY);};
 	}
