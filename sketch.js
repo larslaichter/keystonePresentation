@@ -270,7 +270,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(playingA == true){stroke('#00C9FF');}else{stroke(255);};
+		if(playingA == true){stroke('#FF00DB');}else{stroke(255);};
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -281,7 +281,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(playingB == true){stroke('#00C9FF');}else{stroke(255);};
+		if(playingB == true){stroke('#FF00DB');}else{stroke(255);};
 		rect(810, 230, 400, 400);
 		
 		fill(255);
