@@ -3,6 +3,7 @@ let slideNum = 1,
 	numOfSlides = 19,
 	whatIsItLike,
 	capture,
+	filterOn = true,
 	slide1, slide2;
 
 		
@@ -18,7 +19,7 @@ function setup(){
 
   capture = createCapture(VIDEO);
   capture.size(320, 240);
-  whatIsItLike.hide();
+  capture.hide();
 }
 
 function draw(){
@@ -57,6 +58,10 @@ function keyPressed() {
 		}
 		if (slideNum === 9){
 			slideNum = 11; 
+		}
+	} else if (keyCode === 70) {	//B
+		if (slideNum === 4){
+			filterOn = false; 
 		}
 	}
 }
@@ -112,8 +117,8 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Marry 👩🏽‍🔬',40,80, 400);
 
-  		image(capture, windowWidth/2, windowWidth/2, 320, 240);
-  		filter(GRAY);
+  		image(capture, windowWidth/2 - 200, windowWidth/2 - 100, 320, 240);
+  		if(filterOn=true){filter(GRAY);};
 	}
 	if(slideNum === 5){
 		fill(255);
