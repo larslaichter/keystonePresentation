@@ -236,7 +236,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusionism',40,80, 400);
 
-		text('Claim: Conscious experience is an illusion. 🤩',450,480, 15000);
+		text('Claim: Conscious experience is an illusion. 🤩',350,480, 15000);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -279,7 +279,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('Claim: Illusion of consciousness appears tricky. 😨',700,480, 15000);
+		text('Claim: Illusion of consciousness appears tricky. 😨',400,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
@@ -350,7 +350,7 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',300,450, 1500);
+		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -362,7 +362,7 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',300,450, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',280,450, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
