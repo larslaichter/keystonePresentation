@@ -251,13 +251,13 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Conclusion',40,80, 600);
+		text('👋',40,80, 600);
 
 		fill(255);
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('larslaichter.com/keystone',430,(windowHeight/2)-35, 1000);
+		text('larslaichter.com/keystone',300,(windowHeight/2)-35, 1000);
 	}
 }
 
