@@ -3,6 +3,7 @@ let slideNum = 1,
 	numOfSlides = 19,
 	whatIsItLike,
 	filterOn = true,
+	playingA = false, playingB = false,
 	slide1, slide2,
 	illusion1, illusionAudio1, illusionAudio2;
 
@@ -17,14 +18,14 @@ function setup(){
   createCanvas(windowWidth, windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
-  illusion1 = loadImage('assets/illusion1');
+  illusion1 = loadImage('assets/illusion1.png');
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
   whatIsItLike.hide();
 
   illusionAudio1 = loadSound('assets/muffled.wav');
-  illusionAudio2 = loadSound('assets/muffled.wav');
+  illusionAudio2 = loadSound('assets/clear.wav');
 
   xpos = windowWidth / 2;
   ypos = windowHeight / 2;
@@ -62,6 +63,8 @@ function keyPressed() {
 		}
 		if (slideNum === 12){
 			illusionAudio1.play();
+			playingA = !playingA;
+			if(playingB == true){playingB = !playingB;} 
 		}
 	} else if (keyCode === 66) {	//B
 		if (slideNum === 3){
@@ -72,6 +75,8 @@ function keyPressed() {
 		}
 		if (slideNum === 12){
 			illusionAudio2.play();
+			playingB = !playingB;
+			if(playingA == true){playingA = !playingA;} 
 		}
 	} else if (keyCode === 70) {	//B
 		if (slideNum === 4){
@@ -265,7 +270,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		stroke(255);
+		if(playingA == true){stroke('#00C9FF');}else{stroke(255);};
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -276,8 +281,8 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		stroke(255);
-		rect(810, 230, 450, 400);
+		if(playingB == true){stroke('#00C9FF');}else{stroke(255);};
+		rect(810, 230, 400, 400);
 		
 		fill(255);
 		noStroke();
