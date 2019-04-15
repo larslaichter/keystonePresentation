@@ -4,7 +4,7 @@ let slideNum = 1,
 	whatIsItLike,
 	filterOn = true,
 	slide1, slide2,
-	illusion1;
+	illusion1, illusionAudio1, illusionAudio2;
 
 let xpos, ypos; // Starting position of Mary
 let xspeed = 2.8; // Speed of the Mary
@@ -22,6 +22,9 @@ function setup(){
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
   whatIsItLike.hide();
+
+  illusionAudio1 = loadSound('assets/muffled.wav');
+  illusionAudio2 = loadSound('assets/muffled.wav');
 
   xpos = windowWidth / 2;
   ypos = windowHeight / 2;
@@ -57,6 +60,9 @@ function keyPressed() {
 		if (slideNum === 9){
 			slideNum = 10; 
 		}
+		if (slideNum === 12){
+			illusionAudio1.play();
+		}
 	} else if (keyCode === 66) {	//B
 		if (slideNum === 3){
 			slideNum = 5; 
@@ -64,11 +70,14 @@ function keyPressed() {
 		if (slideNum === 9){
 			slideNum = 11; 
 		}
+		if (slideNum === 12){
+			illusionAudio2.play();
+		}
 	} else if (keyCode === 70) {	//B
 		if (slideNum === 4){
 			filterOn = !filterOn; 
 		}
-	}
+	} 
 }
 
 
