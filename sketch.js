@@ -77,8 +77,6 @@ function showSlide(){
 		image(slide2, 0, 0);
 	}
 	if(slideNum === 3){
-		capture.stop();
-
 		noFill()
 		strokeWeight(8);
 		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
@@ -120,17 +118,17 @@ function showSlide(){
 		text('Marry 👩🏽‍🔬',40,80, 400);
 
 
-  		image(capture, (windowWidth/2), (windowHeight/2), 320, 240);
+  		image(capture, (windowWidth/2)-160, (windowHeight/2)-120, 320, 240);
   		if(filterOn==true){filter(GRAY);};
 	}
 	if(slideNum === 5){
-		capture.stop();
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('A rock person 🗿',40,80, 400);
 	}
 	if(slideNum === 6){
+		capture.stop();
 		whatIsItLike.stop()
 
 		fill(255);
