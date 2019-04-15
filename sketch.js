@@ -373,7 +373,7 @@ function showSlide(){
 		text('Super-illusion 🤩',40,80, 600);
 
 		text('Tools: an agent 😺, an object 🐭',200,300, 1500);
-		text('property illusion 😻, existence illusion 🙀',320,400, 1500);
+		text('property illusion 😻, existence illusion 🙀',330,400, 1500);
 		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
 	if(slideNum === 18){
