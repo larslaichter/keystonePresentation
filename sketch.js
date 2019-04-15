@@ -399,6 +399,9 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('For references and acknowledgemnts visit',300,(windowHeight/2)-135, 1000);
 		textSize(70);
 		textFont('Helvetica-Bold');
 		text('larslaichter.com/keystone',300,(windowHeight/2)-35, 1000);
