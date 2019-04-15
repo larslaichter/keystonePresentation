@@ -1,6 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
-	numOfSlides = 11,
+	numOfSlides = 19,
 	whatIsItLike,
 	slide1, slide2;
 
@@ -43,9 +43,15 @@ function keyPressed() {
 		if (slideNum === 3){
 			slideNum = 4; 
 		}
+		if (slideNum === 9){
+			slideNum = 10; 
+		}
 	} else if (keyCode === 66) {	//B
 		if (slideNum === 3){
 			slideNum = 5; 
+		}
+		if (slideNum === 9){
+			slideNum = 11; 
 		}
 	}
 }
@@ -109,14 +115,13 @@ function showSlide(){
 	}
 	if(slideNum === 6){
 		whatIsItLike.stop()
-		
+
 		fill(255);
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
 		text('(easy 😎) × (hard 🤯)',430,(windowHeight/2)-35, 1000);
 	}
-
 	if(slideNum === 7){
 		whatIsItLike.play();
 		image(whatIsItLike, 0, 0);
@@ -126,57 +131,117 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('What is it like?',650,(windowHeight)-70, 1000);
+		text('What is it like? 🦇',650,(windowHeight)-70, 1000);
 	}
-
 	if(slideNum === 8){
 		whatIsItLike.stop()
 
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Illusionism',40,80, 400);
+	}
+	if(slideNum === 9){
 		noFill()
-		strokeWeight(4);
-		stroke('#00ff88');
-		rect(190, 150, 400, 80);
+		strokeWeight(8);
+		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
+		rect(190, 230, 400, 400);
+
+		fill(255);	
+		noStroke();
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('conceivable',220,450, 400);
 
 		fill(255);
 		noStroke();
-		textSize(50);
-		textFont('Helvetica-Bold');
-		text('conceivable',200,200, 400);
+		textSize(20);
+		textFont('Helvetica-Bold');	
+		text('A',210, 270, 400);
 
 		noFill()
-		strokeWeight(4);
-		stroke('#00ff88');
-		rect(190, 350, 400, 80);
+		strokeWeight(8);
+		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
+		rect(810, 230, 450, 400);
 		
 		fill(255);
 		noStroke();
-		textSize(50);
+		textSize(20);
 		textFont('Helvetica-Bold');	
-		text('⌐ conceivable',200,400, 400);
-	}
+		text('B',830, 270, 400);
 
-	if(slideNum === 9){
 		fill(255);
 		noStroke();
-		textSize(50);
-		textFont('Helvetica-Bold');
-		text('meta-problem',200,200, 400);
+		textSize(100);
+		textFont('Helvetica-Bold');	
+		text('⌐ conceivable',850,450, 400);
 	}
-
 	if(slideNum === 10){
 		fill(255);
-		noStroke();
-		textSize(50);
+		textSize(40);
 		textFont('Helvetica-Bold');
-		text('strong examples of illusions',200,200, 800);
+		text('Illusion meta-problem',40,80, 400);
 	}
-
 	if(slideNum === 11){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Illusion example 1/3',40,80, 400);
+	}
+	if(slideNum === 12){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Illusion example 2/3',40,80, 400);
+	}
+	if(slideNum === 13){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Illusion example 3/3',40,80, 400);
+	}
+	if(slideNum === 14){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('What is an illusion?',40,80, 400);
+	}
+	if(slideNum === 15){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Property illusion 1/3',40,80, 400);
+	}
+	if(slideNum === 16){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Existence illusion 2/3',40,80, 400);
+	}
+	if(slideNum === 17){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Super-illusion 3/3',40,80, 400);
+	}
+	if(slideNum === 18){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('Criteria',40,80, 400);
+	}
+	if(slideNum === 19){
 		fill(255);
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('conclusion',200,200, 400);
+		text('Conclusion',200,200, 400);
+
+		fill(255);
+		noStroke();
+		textSize(70);
+		textFont('Helvetica-Bold');
+		text('larslaichter.com/keystone',430,(windowHeight/2)-35, 1000);
 	}
 }
 
