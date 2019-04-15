@@ -2,12 +2,16 @@ let slideNum = 1,
 	frameNum = 0,
 	numOfSlides = 19,
 	whatIsItLike,
-	capture,
 	filterOn = true,
 	slide1, slide2;
 
-		
+let xpos, ypos; // Starting position of Mary
+let xspeed = 2.8; // Speed of the Mary
+let yspeed = 2.2; // Speed of the Mary
+let xdirection = 1; // Left or Right
+let ydirection = 1; // Top to Bottom
 
+		
 function setup(){
   createCanvas(windowWidth,windowWidth);
   slide1 = loadImage('slides/slide-01.png');
@@ -16,10 +20,6 @@ function setup(){
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
   whatIsItLike.hide();
-
-  capture = createCapture(VIDEO);
-  capture.size(320, 240);
-  capture.hide();
 }
 
 function draw(){
@@ -115,10 +115,29 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Marry 👩🏽‍🔬',40,80, 400);
+		text('Marry',40,80, 400);
 
+		// Update the position of the shape
+ 		xpos = xpos + xspeed * xdirection;
+ 		ypos = ypos + yspeed * ydirection;
+	
+ 		// Test to see if the shape exceeds the boundaries of the screen
+ 		// If it does, reverse its direction by multiplying by -1
+  		if (xpos > width - 10 || xpos < 10) {
+    		xdirection *= -1;
+		}
+		if (ypos > height - rad || ypos < 10) {
+		  ydirection *= -1;
+		}
+	
+		// Draw the shape
+		ellipse(xpos, ypos, rad, rad);
 
-  		image(capture, (windowWidth/2)-160, (windowHeight/2)-120, 320, 240);
+		fill(255);
+		textSize(60);
+		textFont('Helvetica-Bold');
+		text('👩🏽‍🔬',xpos, ypos, 60);
+
   		if(filterOn==true){filter(GRAY);};
 	}
 	if(slideNum === 5){
@@ -135,7 +154,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',420,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',410,(windowHeight/2)-35, 1000);
 	}
 	if(slideNum === 7){
 		whatIsItLike.play();
@@ -146,7 +165,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('What is it like? 🦇',650,(windowHeight)-70, 1000);
+		text('What is it like? 🦇',660,(windowHeight)-70, 1000);
 	}
 	if(slideNum === 8){
 		whatIsItLike.stop()
