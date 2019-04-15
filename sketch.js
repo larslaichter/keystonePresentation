@@ -325,6 +325,15 @@ function showSlide(){
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Criteria',40,80, 600);
+
+		fill(255);
+		noStroke();
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('1. Definitional',300,100, 1000);
+		text('2. Functional',300,200, 1000);
+		text('3. Framework',300,300, 1000);
+		text('4. Empirical',300,400, 1000);
 	}
 	if(slideNum === 19){
 		fill(255);
