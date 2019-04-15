@@ -115,11 +115,11 @@ function showSlide(){
 		text('⌐ rock',850,450, 400);
 	}
 	if(slideNum === 4){
+		noStroke();
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Marry',40,80, 400);
-
 		
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
@@ -128,10 +128,10 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
-	  		if (xpos > width - 10 || xpos < 10) {
+	  		if (xpos > 920 - 10 || xpos < 520) {
 	    		xdirection *= -1;
 			}
-			if (ypos > height - 10 || ypos < 10) {
+			if (ypos > 650 - 10 || ypos < 250) {
 			  	ydirection *= -1;
 			}
 		}
@@ -141,12 +141,15 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('👩🏽‍🔬', xpos, ypos, 60);
 
-		noFill()
-		strokeWeight(8);
-		stroke(255);
-		rect(400, 230, 450, 400);
-
-  		if(filterOn==true){filter(GRAY);};
+  		if(filterOn==true){
+  			noFill()
+			strokeWeight(8);
+			stroke(255);
+			rect(520, 250, 400, 400);
+			noStroke();
+			
+  			filter(GRAY);
+  		};
 	}
 	if(slideNum === 5){
 		fill(255);
