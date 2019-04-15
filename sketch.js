@@ -156,7 +156,12 @@ function showSlide(){
 			noStroke();
 
   			filter(GRAY);
-  		};
+  		} else {
+  			fill(255);
+			textSize(60);
+			textFont('Helvetica-Bold');
+  			text('🌺', random(0, windowWidth), random(0, windowHeight), 60);
+  		}
 	}
 	if(slideNum === 5){
 		fill(255);
