@@ -138,7 +138,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Marry',40,80, 400);
+		text('Mary',40,80, 400);
 		
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
@@ -236,7 +236,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusionism',40,80, 400);
 
-		text('Claim: Conscious experience is an illusion. 🤩',350,480, 15000);
+		text('Claim: Conscious experience is an illusion. 🤩',330,480, 15000);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -279,7 +279,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('Claim: Illusion of consciousness appears tricky. 😨',400,480, 15000);
+		text('Claim: Illusion of consciousness appears tricky. 😨',380,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
@@ -350,7 +350,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
+		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
+		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -362,7 +363,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',280,450, 1500);
+		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',280,450, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -370,7 +372,8 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',550,420, 1500);
+		text('Tools: an agent 😺, an object 🐭, property illusion 😻, existence illusion 🙀',180,450, 1500);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',550,420, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
