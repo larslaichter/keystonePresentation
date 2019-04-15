@@ -22,7 +22,7 @@ function setup(){
   whatIsItLike.hide();
 
   xpos = windowWidth / 2;
-  ypos = windowWidth / 2;
+  ypos = windowHeight / 2;
 }
 
 function draw(){
@@ -128,10 +128,10 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
-	  		if (xpos > 920 - 10 || xpos < 520) {
+	  		if (xpos > 920 - 30 || xpos < 520) {
 	    		xdirection *= -1;
 			}
-			if (ypos > 650 - 10 || ypos < 250) {
+			if (ypos > 650 - 30 || ypos < 250) {
 			  	ydirection *= -1;
 			}
 		} else {
