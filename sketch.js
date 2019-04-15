@@ -13,7 +13,7 @@ let ydirection = 1; // Top to Bottom
 
 		
 function setup(){
-  createCanvas(windowWidth,windowWidth);
+  createCanvas(windowHeight,windowWidth);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
@@ -121,7 +121,6 @@ function showSlide(){
 		text('Marry',40,80, 400);
 
 		
-
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
  		ypos = ypos + yspeed * ydirection;
@@ -140,6 +139,11 @@ function showSlide(){
 		textSize(60);
 		textFont('Helvetica-Bold');
 		text('👩🏽‍🔬', xpos, ypos, 60);
+
+		noFill()
+		strokeWeight(8);
+		stroke(255);
+		rect(400, 230, 450, 400);
 
   		if(filterOn==true){filter(GRAY);};
 	}
