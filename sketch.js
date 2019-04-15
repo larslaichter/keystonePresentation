@@ -31,7 +31,7 @@ function draw(){
   	fill(255);
   	textSize(20);
   	textFont('Helvetica-Bold');
-	text(slideNum + "/" + numOfSlides, width-55, 40, 70, 80);
+	text(slideNum, width-55, 40, 70, 80);
 }
 
 function keyPressed() {
@@ -112,7 +112,6 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Marry 👩🏽‍🔬',40,80, 400);
 
-		filter('GRAY');
   		image(capture, 0, 0, 320, 240);
 	}
 	if(slideNum === 5){
