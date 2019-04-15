@@ -13,7 +13,7 @@ let ydirection = 1; // Top to Bottom
 
 		
 function setup(){
-  createCanvas(windowHeight,windowWidth);
+  createCanvas(windowWidth, windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
@@ -127,13 +127,14 @@ function showSlide(){
 	
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
-  		if (xpos > width - 10 || xpos < 10) {
-    		xdirection *= -1;
+ 		if(filterOn==true){
+	  		if (xpos > width - 10 || xpos < 10) {
+	    		xdirection *= -1;
+			}
+			if (ypos > height - 10 || ypos < 10) {
+			  	ydirection *= -1;
+			}
 		}
-		if (ypos > height - 10 || ypos < 10) {
-		  	ydirection *= -1;
-		}
-	
 
 		fill(255);
 		textSize(60);
