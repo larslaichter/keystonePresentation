@@ -126,7 +126,7 @@ function showSlide(){
   		if (xpos > width - 10 || xpos < 10) {
     		xdirection *= -1;
 		}
-		if (ypos > height - rad || ypos < 10) {
+		if (ypos > height - 10 || ypos < 10) {
 		  ydirection *= -1;
 		}
 	
