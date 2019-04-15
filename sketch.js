@@ -150,7 +150,7 @@ function showSlide(){
 	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
 			}
-			if (ypos > 650 - 10 || ypos < 230) {
+			if (ypos > 650 - 10 || ypos < 200) {
 			  	ydirection *= -1;
 			}
 		} else {
@@ -303,7 +303,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 400, 280, 450, 313);
+		image(illusion2, 450, 250, 450, 313);
 	}
 	if(slideNum === 14){
 		fill(255);
@@ -350,7 +350,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',300,500, 15000);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',450,450, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
