@@ -105,7 +105,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Mary 👩🏽‍🔬',40,80, 400);
+		text('Marry 👩🏽‍🔬',40,80, 400);
 	}
 	if(slideNum === 5){
 		fill(255);
@@ -120,7 +120,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',430,(windowHeight/2)-35, 1000);
+		text('(easy 😎) × (hard 🤯)',420,(windowHeight/2)-35, 1000);
 	}
 	if(slideNum === 7){
 		whatIsItLike.play();
@@ -151,7 +151,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('conceivable',220,450, 400);
+		text('concei- vable',220,450, 400);
 
 		fill(255);
 		noStroke();
@@ -174,7 +174,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');	
-		text('⌐ conceivable',850,450, 400);
+		text('⌐ con- ceivable',850,450, 400);
 	}
 	if(slideNum === 10){
 		fill(255);
@@ -222,7 +222,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Super-illusion 3/3',40,80, 400);
+		text('Super-illusion 3/3',40,80, 600);
 	}
 	if(slideNum === 18){
 		fill(255);
@@ -232,10 +232,9 @@ function showSlide(){
 	}
 	if(slideNum === 19){
 		fill(255);
-		noStroke();
-		textSize(50);
+		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Conclusion',200,200, 400);
+		text('Conclusion',40,80, 400);
 
 		fill(255);
 		noStroke();
