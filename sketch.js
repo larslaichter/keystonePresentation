@@ -131,7 +131,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');	
-		text('⌐ rock',850,450, 400);
+		text('¬ rock',850,450, 400);
 	}
 	if(slideNum === 4){
 		noStroke();
@@ -271,7 +271,7 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');	
-		text('⌐ con- ceivable',850,450, 400);
+		text('¬ con- ceivable',850,450, 400);
 	}
 	if(slideNum === 10){
 		fill(255);
@@ -344,13 +344,13 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Property illusion 🙀',40,80, 600);
+		text('Property illusion 😻',40,80, 600);
 
 		fill(255);
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
+		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
