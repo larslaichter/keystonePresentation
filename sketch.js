@@ -2,6 +2,7 @@ let slideNum = 1,
 	frameNum = 0,
 	numOfSlides = 19,
 	whatIsItLike,
+	capture,
 	slide1, slide2;
 
 		
@@ -13,6 +14,10 @@ function setup(){
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
+  whatIsItLike.hide();
+
+  capture = createCapture(VIDEO);
+  capture.size(320, 240);
   whatIsItLike.hide();
 }
 
@@ -106,6 +111,9 @@ function showSlide(){
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Marry 👩🏽‍🔬',40,80, 400);
+
+		filter('GRAY');
+  		image(capture, 0, 0, 320, 240);
 	}
 	if(slideNum === 5){
 		fill(255);
@@ -180,43 +188,43 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion meta-problem',40,80, 400);
+		text('Illusion meta-problem',40,80, 600);
 	}
 	if(slideNum === 11){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion example 1/3',40,80, 400);
+		text('Illusion example 1/3',40,80, 600);
 	}
 	if(slideNum === 12){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion example 2/3',40,80, 400);
+		text('Illusion example 2/3',40,80, 600);
 	}
 	if(slideNum === 13){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion example 3/3',40,80, 400);
+		text('Illusion example 3/3',40,80, 600);
 	}
 	if(slideNum === 14){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('What is an illusion?',40,80, 400);
+		text('What is an illusion?',40,80, 600);
 	}
 	if(slideNum === 15){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Property illusion 1/3',40,80, 400);
+		text('Property illusion 1/3',40,80, 600);
 	}
 	if(slideNum === 16){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Existence illusion 2/3',40,80, 400);
+		text('Existence illusion 2/3',40,80, 600);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -228,13 +236,13 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Criteria',40,80, 400);
+		text('Criteria',40,80, 600);
 	}
 	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Conclusion',40,80, 400);
+		text('Conclusion',40,80, 600);
 
 		fill(255);
 		noStroke();
