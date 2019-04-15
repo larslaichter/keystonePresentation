@@ -77,6 +77,8 @@ function showSlide(){
 		image(slide2, 0, 0);
 	}
 	if(slideNum === 3){
+		capture.stop();
+
 		noFill()
 		strokeWeight(8);
 		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
@@ -122,6 +124,7 @@ function showSlide(){
   		if(filterOn==true){filter(GRAY);};
 	}
 	if(slideNum === 5){
+		capture.stop();
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
