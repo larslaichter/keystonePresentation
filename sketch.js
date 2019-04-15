@@ -279,7 +279,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('Claim: Illusion of consciousness appears tricky. 😨',380,480, 15000);
+		text('Claim: Illusion of consciousness appears tricky. 😨',300,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
@@ -372,8 +372,9 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('Tools: an agent 😺, an object 🐭, property illusion 😻, existence illusion 🙀',200,350, 1500);
-		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',200,420, 1500);
+		text('Tools: an agent 😺, an object 🐭',200,300, 1500);
+		text('property illusion 😻, existence illusion 🙀',300,400, 1500);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
