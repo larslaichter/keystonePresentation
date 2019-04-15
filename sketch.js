@@ -21,7 +21,7 @@ function setup(){
   slide2 = loadImage('slides/slide-02.png');
 
   illusion1 = loadImage('assets/illusion1.png');
-  illusion2 = loadImage('assets/eye,jpg');
+  illusion2 = loadImage('assets/eye.jpg');
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
@@ -305,42 +305,39 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('What is an illusion?',40,80, 600);
+		text('What is an illusion? 🤩',40,80, 600);
 	}
 	if(slideNum === 15){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Property illusion 1/3',40,80, 600);
+		text('Property illusion 🙀',40,80, 600);
 
 		fill(255);
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀x)(∃o)(IPxP o≡(RIxP o∧ ¬P o)∨(RIx¬Po ∧ Po))',100,300, 1500);
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',100,400, 1500);
+		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',100,400, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Existence illusion 2/3',40,80, 600);
+		text('Existence illusion 🙀',40,80, 600);
 
 		fill(255);
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀x)(∃o)(IExo≡(RIxE!o∧ ¬E!o)∨(RIx¬E!o∧E!o))',100,300, 1500);
 		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',100,400, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Super-illusion 3/3',40,80, 600);
+		text('Super-illusion 🤩',40,80, 600);
 
-		text('((∀x)(∃o)(ISx[o ∨ Po]≡[(RIxE!o∧¬E!o)∨(RIx¬E!o∧E!o)]∨[(RIxP o∧ ¬Po)∨(RIx¬P o∧Po)])',100,300, 1500);
-		text('(∀😺(∃🐭)(🤩 iff 😻 or 🙀)',100,500, 15000);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',300,500, 15000);
 	}
 	if(slideNum === 18){
 		fill(255);
