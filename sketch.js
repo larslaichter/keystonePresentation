@@ -108,6 +108,8 @@ function showSlide(){
 		text('A rock person 🗿',40,80, 400);
 	}
 	if(slideNum === 6){
+		whatIsItLike.stop()
+		
 		fill(255);
 		noStroke();
 		textSize(70);
@@ -124,10 +126,12 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('What is it like?',600,(windowHeight)-70, 1000);
+		text('What is it like?',650,(windowHeight)-70, 1000);
 	}
 
 	if(slideNum === 8){
+		whatIsItLike.stop()
+
 		noFill()
 		strokeWeight(4);
 		stroke('#00ff88');
