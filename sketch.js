@@ -114,7 +114,6 @@ function showSlide(){
 		text('⌐ rock',850,450, 400);
 	}
 	if(slideNum === 4){
-		capture.start()
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
