@@ -216,7 +216,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusionism',40,80, 400);
 
-		text('Claim: Conscious experience is an illusion. 🤩',200,480, 15000);
+		text('Claim: Conscious experience is an illusion. 🤩',450,480, 15000);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -259,7 +259,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('It appears tricky. 😨',400,480, 15000);
+		text('Claim: Illusion of consciousness appears tricky. 😨',700,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
@@ -303,7 +303,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 500, 250, 450, 313);
+		image(illusion2, 550, 300, 450, 313);
 	}
 	if(slideNum === 14){
 		fill(255);
@@ -315,10 +315,10 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools:',600,250, 1000);
-		text('An agent: 😺',600,350, 1000);
-		text('An object: 🐭',600,450, 1000);
-		text('Representations: 🧠',600,550, 1000);
+		text('Tools:',600,300, 1000);
+		text('An agent 😺',600,400, 1000);
+		text('An object 🐭',600,500, 1000);
+		text('Representations 🧠',600,600, 1000);
 	}
 	if(slideNum === 15){
 		fill(255);
@@ -330,7 +330,7 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',100,400, 1500);
+		text('(∀😺)(∃🐭)(🙀P🐭 iff (🧠P🐭 and ¬P🐭) or (🧠 ¬P🐭 and P🐭))',300,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -342,7 +342,7 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',100,400, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) or (🧠¬E!🐭 and E!🐭))',300,450, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -350,7 +350,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',550,380, 1500);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',550,420, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
@@ -362,10 +362,10 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('1. Definitional 🎯',500,250, 1000);
-		text('2. Functional ⚙️',500,350, 1000);
-		text('3. Framework 🖼',500,450, 1000);
-		text('4. Empirical 🔬',500,550, 1000);
+		text('1. Definitional 🎯',700,400, 1000);
+		text('2. Functional ⚙️',700,500, 1000);
+		text('3. Framework 🖼',700,600, 1000);
+		text('4. Empirical 🔬',700,700, 1000);
 	}
 	if(slideNum === 19){
 		fill(255);
