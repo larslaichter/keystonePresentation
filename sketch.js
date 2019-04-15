@@ -3,7 +3,8 @@ let slideNum = 1,
 	numOfSlides = 19,
 	whatIsItLike,
 	filterOn = true,
-	slide1, slide2;
+	slide1, slide2,
+	illusion1;
 
 let xpos, ypos; // Starting position of Mary
 let xspeed = 2.8; // Speed of the Mary
@@ -16,6 +17,7 @@ function setup(){
   createCanvas(windowWidth, windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
+  illusion1 = loadImage('assets/illusion1');
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
@@ -195,7 +197,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusionism',40,80, 400);
+		text('Illusionism 🤩',40,80, 400);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -236,19 +238,43 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion meta-problem',40,80, 600);
+		text('Illusion meta-problem 🤩',40,80, 600);
 	}
 	if(slideNum === 11){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 1/3',40,80, 600);
+
+		image(illusion1, 400, 400);
 	}
 	if(slideNum === 12){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 2/3',40,80, 600);
+
+		noFill()
+		strokeWeight(8);
+		stroke(255);
+		rect(190, 230, 400, 400);
+
+		fill(255);
+		noStroke();
+		textSize(20);
+		textFont('Helvetica-Bold');	
+		text('A',210, 270, 400);
+
+		noFill()
+		strokeWeight(8);
+		stroke(255);
+		rect(810, 230, 450, 400);
+		
+		fill(255);
+		noStroke();
+		textSize(20);
+		textFont('Helvetica-Bold');	
+		text('B',830, 270, 400);
 	}
 	if(slideNum === 13){
 		fill(255);
