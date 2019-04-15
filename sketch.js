@@ -351,7 +351,7 @@ function showSlide(){
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',280,450, 1500);
+		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',280,350, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -364,7 +364,7 @@ function showSlide(){
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,450, 1500);
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',280,450, 1500);
+		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',280,350, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
