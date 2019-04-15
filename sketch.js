@@ -112,7 +112,8 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Marry 👩🏽‍🔬',40,80, 400);
 
-  		image(capture, 0, 0, 320, 240);
+  		image(capture, windowWidth/2, windowWidth/2, 320, 240);
+  		filter(GRAY);
 	}
 	if(slideNum === 5){
 		fill(255);
