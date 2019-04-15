@@ -128,17 +128,17 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
-	  		if (xpos > 920 - 30 || xpos < 520) {
+	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
 			}
-			if (ypos > 650 - 30 || ypos < 250) {
+			if (ypos > 650 - 10 || ypos < 270) {
 			  	ydirection *= -1;
 			}
 		} else {
-			if (xpos > windowWidth || xpos < 30) {
+			if (xpos > windowWidth - 60 || xpos < 30) {
 	    		xdirection *= -1;
 			}
-			if (ypos > windowHeight || ypos < 30) {
+			if (ypos > windowHeight - 10|| ypos < 30) {
 			  	ydirection *= -1;
 			}
 		}
@@ -170,7 +170,6 @@ function showSlide(){
 		text('A rock person 🗿',40,80, 400);
 	}
 	if(slideNum === 6){
-		capture.stop();
 		whatIsItLike.stop()
 
 		fill(255);
