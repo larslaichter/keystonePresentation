@@ -5,7 +5,8 @@ let slideNum = 1,
 	filterOn = true,
 	playingA = false, playingB = false,
 	slide1, slide2,
-	illusion1, illusionAudio1, illusionAudio2;
+	illusion1, illusion2,
+	illusionAudio1, illusionAudio2;
 
 let xpos, ypos; // Starting position of Mary
 let xspeed = 2.8; // Speed of the Mary
@@ -18,7 +19,9 @@ function setup(){
   createCanvas(windowWidth, windowHeight);
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
+
   illusion1 = loadImage('assets/illusion1.png');
+  illusion2 = loadImage('assets/eye,jpg');
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
@@ -295,6 +298,8 @@ function showSlide(){
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
+
+		image(illusion2, 400, 280, 450, 313);
 	}
 	if(slideNum === 14){
 		fill(255);
@@ -374,5 +379,6 @@ NOTES
 Illusions: 
 	– visual: https://twitter.com/Keith_Laws/status/1066092338315968513/photo/1
  	– sound: https://soundcloud.com/whyy-the-pulse/an-audio-illusion
-	– global: vision field
+	– global: vision field Qualitative representation of visual detail using a single glance of the eyes.
+		https://www.cambridgeincolour.com/tutorials/cameras-vs-human-eye.htm
 */
