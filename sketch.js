@@ -186,7 +186,27 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('A rock person 🗿',40,80, 400);
+		text('A rock person',40,80, 400);
+
+		// Update the position of the shape
+ 		xpos = xpos + xspeed * xdirection;
+ 		ypos = ypos + yspeed * ydirection;
+	
+ 		// Test to see if the shape exceeds the boundaries of the screen
+ 		// If it does, reverse its direction by multiplying by -1
+ 		
+		if (xpos > windowWidth - 60 || xpos < 30) {
+	    	xdirection *= -1;
+		}
+		if (ypos > windowHeight - 10|| ypos < 30) {
+		  	ydirection *= -1;
+		}
+		
+
+		fill(255);
+		textSize(60);
+		textFont('Helvetica-Bold');
+		text('🗿', xpos, ypos, 60);
 	}
 	if(slideNum === 6){
 		whatIsItLike.stop()
