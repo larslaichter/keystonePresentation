@@ -236,7 +236,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusionism',40,80, 400);
 
-		text('Claim: Conscious experience is an illusion. 🤩',330,480, 15000);
+		text('Claim: Conscious experience is an illusion. 🤩',280,480, 15000);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -279,7 +279,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('Claim: Illusion of consciousness appears tricky. 😨',300,480, 15000);
+		text('Claim: Illusion of consciousness appears tricky. 😨',250,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
