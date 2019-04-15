@@ -131,7 +131,7 @@ function showSlide(){
 	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
 			}
-			if (ypos > 650 - 10 || ypos < 270) {
+			if (ypos > 650 - 10 || ypos < 230) {
 			  	ydirection *= -1;
 			}
 		} else {
