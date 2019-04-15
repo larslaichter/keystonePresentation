@@ -214,9 +214,9 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusionism 🤩',40,80, 400);
+		text('Illusionism',40,80, 400);
 
-		text('Conscious experience is an illusion.',300,500, 15000);
+		text('Claim: Conscious experience is an illusion. 🤩',200,480, 15000);
 	}
 	if(slideNum === 9){
 		noFill()
@@ -257,9 +257,9 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion meta-problem 😨',40,80, 600);
+		text('Illusion meta-problem',40,80, 600);
 
-		text('It appears tricky.',300,500, 15000);
+		text('It appears tricky. 😨',400,480, 15000);
 	}
 	if(slideNum === 11){
 		fill(255);
@@ -303,7 +303,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 450, 250, 450, 313);
+		image(illusion2, 500, 250, 450, 313);
 	}
 	if(slideNum === 14){
 		fill(255);
@@ -315,10 +315,10 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools:',400,250, 1000);
-		text('An agent: 😺',500,350, 1000);
+		text('Tools:',600,250, 1000);
+		text('An agent: 😺',600,350, 1000);
 		text('An object: 🐭',600,450, 1000);
-		text('Representations: 🧠',700,550, 1000);
+		text('Representations: 🧠',600,550, 1000);
 	}
 	if(slideNum === 15){
 		fill(255);
@@ -350,22 +350,22 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',450,450, 1500);
+		text('(∀😺)(∃🐭)(🤩 iff (😻 or 🙀))',550,380, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Illusion of consciousness criteria',40,80, 1000);
+		text('Criteria for conceivability',40,80, 1000);
 
 		fill(255);
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('1. Definitional 🎯',400,250, 1000);
+		text('1. Definitional 🎯',500,250, 1000);
 		text('2. Functional ⚙️',500,350, 1000);
-		text('3. Framework 🖼',600,450, 1000);
-		text('4. Empirical 🔬',700,550, 1000);
+		text('3. Framework 🖼',500,450, 1000);
+		text('4. Empirical 🔬',500,550, 1000);
 	}
 	if(slideNum === 19){
 		fill(255);
