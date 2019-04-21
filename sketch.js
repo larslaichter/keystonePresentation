@@ -109,22 +109,26 @@ function showSlide(){
 		text('🤷‍♂️',(windowWidth/2)-150,(windowHeight/2), 1000);
 	}
 	if(slideNum === 5){
-		noStroke();
-		fill(0,0,0,0.5); 
-		rect((windowWidth/2)-150,(windowHeight/2), 100, 100);
-
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
 		text('🤷‍♂️🐷',(windowWidth/2)-150,(windowHeight/2), 1000);
+
+		noStroke();
+		fill(0,0,0,127); 
+		rect((windowWidth/2)-150,(windowHeight/2), 100, 100);
 	}
 	if(slideNum === 6){
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('🤷‍♂️🐷🤖',(windowWidth/2)-150,(windowHeight/2), 1000);
+		text('🤷‍♂️🐷👾',(windowWidth/2)-150,(windowHeight/2), 1000);
+
+		noStroke();
+		fill(0,0,0,127); 
+		rect((windowWidth/2)-150,(windowHeight/2), 200, 100);
 	}
 	if(slideNum === 7){
 		noFill()
@@ -163,7 +167,7 @@ function showSlide(){
 	}
 	if(slideNum === 8){
 		noFill()
-		strokeWeight(8);
+		strokeWeight(16);
 		stroke('#fbd229'); 
 		rect(0, 0, windowWidth, windowHeight);
 
@@ -220,12 +224,12 @@ function showSlide(){
   			fill(255);
 			textSize(100);
 			textFont('Helvetica-Bold');
-  			text('🌺', flowerX, flowerY, 100);
+  			text('🌹', flowerX, flowerY, 100);
   		}
 	}
 	if(slideNum === 9){
 		noFill()
-		strokeWeight(8);
+		strokeWeight(16);
 		stroke('#FF00DB'); 
 		rect(0, 0, windowWidth, windowHeight);
 
