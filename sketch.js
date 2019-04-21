@@ -273,7 +273,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('Illusionism:\nConscious experience \nis an illusion. 🤩',250,320, 15000);
+		text('Illusionism:\nConscious experience \nis an illusion. 🤩',230,350, 15000);
 	}
 	if(slideNum === 13){
 		noFill()
@@ -320,7 +320,7 @@ function showSlide(){
 		textSize(100);
 		noStroke();
 		textFont('Helvetica-Bold');
-		text('Illusion meta-problem:\nConceiving of the\nillusion of consciousness\nappears tricky. 😨',220,300, 15000);
+		text('Illusion meta-problem:\nConceiving of the illusion\nof consciousness\nappears tricky. 😨',150,300, 15000);
 	}
 	if(slideNum === 15){
 		noFill()
@@ -366,7 +366,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		//text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 550, 300, 450, 313);
+		image(illusion2, 550, 300, illusion2.width, illusion2.height);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -378,11 +378,11 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('Criteria for conceivability',500,300, 1000);
-		text('1. Definitional 🎯',500,400, 1000);
-		text('2. Functional ⚙️',500,500, 1000);
-		text('3. Framework 🖼',500,600, 1000);
-		text('4. Empirical 🔬',500,700, 1000);
+		text('Criteria for conceivability',200,300, 1500);
+		text('1. Definitional',200,400, 1000);
+		text('2. Functional',200,500, 1000);
+		text('3. Framework',200,600, 1000);
+		text('4. Empirical',200,700, 1000);
 	}
 	if(slideNum === 18){
 		fill(255);
