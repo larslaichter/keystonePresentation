@@ -131,6 +131,7 @@ function showSlide(){
 		rect((windowWidth/2)-150,(windowHeight/2)-100, 200, 120);
 	}
 	if(slideNum === 7){
+		textAlign(LEFT);
 		noFill()
 		strokeWeight(3);
 		stroke('#fbd229'); 
@@ -269,11 +270,10 @@ function showSlide(){
 		whatIsItLike.stop()
 
 		fill(255);
-		textSize(40);
+		textSize(100);
+		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('Illusionism',40,80, 400);
-
-		text('Claim: Conscious experience is an illusion. 🤩',280,480, 15000);
+		text('Illusionism:\nConscious experience is an illusion. 🤩',280,480, 15000);
 	}
 	if(slideNum === 13){
 		noFill()
