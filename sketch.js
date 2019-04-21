@@ -101,7 +101,7 @@ function showSlide(){
 	if(slideNum === 3){
 		noFill()
 		strokeWeight(8);
-		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
+		stroke('#00C9FF');
 		rect(190, 230, 400, 400);
 
 		fill(255);	
@@ -118,7 +118,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
+		stroke('#FF00DB');
 		rect(810, 230, 450, 400);
 		
 		fill(255);
@@ -147,12 +147,15 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
+ 			xpos = windowWidth/2; 
+ 			ypos = windowHeight/2; 
+ 			/*
 	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
 			}
 			if (ypos > 650 - 10 || ypos < 300) {
 			  	ydirection *= -1;
-			}
+			} */
 		} else {
 			if (xpos > windowWidth - 60 || xpos < 30) {
 	    		xdirection *= -1;
@@ -241,7 +244,7 @@ function showSlide(){
 	if(slideNum === 9){
 		noFill()
 		strokeWeight(8);
-		if(frameNum%5==0){stroke('#00C9FF');}else{stroke('#FF00DB');}
+		stroke('#00C9FF');
 		rect(190, 230, 400, 400);
 
 		fill(255);	
@@ -258,7 +261,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(frameNum%5==0){stroke('#FF00DB');}else{stroke('#00C9FF');}
+		stroke('#FF00DB');
 		rect(810, 230, 450, 400);
 		
 		fill(255);
@@ -297,7 +300,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(playingA == true){stroke('#FF00DB');}else{stroke(255);};
+		stroke('#FF00DB');
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -308,7 +311,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(8);
-		if(playingB == true){stroke('#FF00DB');}else{stroke(255);};
+		stroke('#FF00DB');
 		rect(810, 230, 400, 400);
 		
 		fill(255);
@@ -337,7 +340,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Tools:',600,300, 1000);
 		text('An agent 😺',600,400, 1000);
-		text('An object 🐭',600,500, 1000);
+		text('An object 🥛',600,500, 1000);
 		text('Representations 🧠',600,600, 1000);
 	}
 	if(slideNum === 15){
@@ -350,8 +353,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,350, 1500);
-		text('(∀😺)(∃🐭)(😻P🐭 iff (🧠P🐭 and ¬P🐭) and/or (🧠 ¬P🐭 and P🐭))',180,450, 1500);
+		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
+		text('(∀😺)(∃🥛)(😻P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,450, 1500);
 	}
 	if(slideNum === 16){
 		fill(255);
@@ -363,8 +366,8 @@ function showSlide(){
 		noStroke();
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Tools: an agent 😺, an object 🐭, representations 🧠',180,350, 1500);
-		text('(∀😺)(∃🐭)(🙀🐭 iff (🧠E!🐭 and ¬E!🐭) and/or (🧠¬E!🐭 and E!🐭))',180,450, 1500);
+		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
+		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,450, 1500);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -372,9 +375,9 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Super-illusion 🤩',40,80, 600);
 
-		text('Tools: an agent 😺, an object 🐭',200,300, 1500);
+		text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		text('property illusion 😻, existence illusion 🙀',330,380, 1500);
-		text('(∀😺)(∃🐭)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
+		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
 	if(slideNum === 18){
 		fill(255);
@@ -409,6 +412,22 @@ function showSlide(){
 
 /*
 NOTES
+
+TODO: 
+- clarify physical vs non-physical
+- get rid of flashing options 
+- make flowers not flash 
+- make fonts larger 
+- clarify what terms are mine 
+- put color rectangle around option slides 
+- introduce criteria before defining illusion 
+– introduce philosophy in general 
+– have TODO cards for the talk 
+– add why does this matter slide 
+– write out logic with words 
+– stop bouncing Mary in the start 
+– add a conclusion slide 
+
 
 Illusions: 
 	– visual: https://twitter.com/Keith_Laws/status/1066092338315968513/photo/1
