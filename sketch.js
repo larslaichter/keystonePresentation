@@ -334,7 +334,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		stroke('#fbd229');
+		stroke('#FF00DB');
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -345,7 +345,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		stroke('#fbd229');
+		stroke('#FF00DB');
 		rect(810, 230, 400, 400);
 		
 		fill(255);
@@ -371,6 +371,21 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
+		text('Criteria for conceivability',40,80, 1000);
+
+		fill(255);
+		noStroke();
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('1. Definitional 🎯',700,400, 1000);
+		text('2. Functional ⚙️',700,500, 1000);
+		text('3. Framework 🖼',700,600, 1000);
+		text('4. Empirical 🔬',700,700, 1000);
+	}
+	if(slideNum === 18){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
 		text('What is an illusion? 🤩',40,80, 600);
 
 		fill(255);
@@ -382,7 +397,7 @@ function showSlide(){
 		text('An object 🥛',600,500, 1000);
 		text('Representations 🧠',600,600, 1000);
 	}
-	if(slideNum === 18){
+	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -395,7 +410,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(😻P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,450, 1500);
 	}
-	if(slideNum === 19){
+	if(slideNum === 20){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -408,7 +423,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,450, 1500);
 	}
-	if(slideNum === 20){
+	if(slideNum === 21){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -418,7 +433,7 @@ function showSlide(){
 		text('property illusion 😻, existence illusion 🙀',330,380, 1500);
 		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
-	if(slideNum === 21){
+	if(slideNum === 22){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -433,7 +448,7 @@ function showSlide(){
 		text('3. Framework 🖼',700,600, 1000);
 		text('4. Empirical 🔬',700,700, 1000);
 	}
-	if(slideNum === 22){
+	if(slideNum === 23){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
