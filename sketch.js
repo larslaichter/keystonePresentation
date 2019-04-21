@@ -259,7 +259,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy Problems\nvs.\nThe Hard Problem',200,(windowHeight/2), 1000);
+		text('easy problems\nvs.\nthe hard problem',210,(windowHeight/2)-150, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
