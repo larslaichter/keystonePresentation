@@ -149,7 +149,7 @@ function showSlide(){
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
  			xpos = (windowWidth/2) - 50; 
- 			ypos = (windowHeight/2); 
+ 			ypos = (windowHeight/2) + 50; 
  			/*
 	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
