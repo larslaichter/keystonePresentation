@@ -259,7 +259,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('easy problems\nvs.\nthe hard problem',210,(windowHeight/2)-150, 1000);
+		text('Easy problems\nvs.\nThe hard problem',210,(windowHeight/2)-150, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
@@ -273,11 +273,11 @@ function showSlide(){
 		textSize(100);
 		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('Illusionism:\nConscious experience is an illusion. 🤩',280,480, 15000);
+		text('The illusion problem:\nConscious experience \nis an illusion. 🤩',280,200, 15000);
 	}
 	if(slideNum === 13){
 		noFill()
-		strokeWeight(8);
+		strokeWeight(3);
 		stroke('#fbd229');
 		rect(190, 230, 400, 400);
 
@@ -294,7 +294,7 @@ function showSlide(){
 		text('A',210, 270, 400);
 
 		noFill()
-		strokeWeight(8);
+		strokeWeight(3);
 		stroke('#FF00DB');
 		rect(810, 230, 450, 400);
 		
@@ -312,21 +312,18 @@ function showSlide(){
 	}
 	if(slideNum === 14){
 		fill(255);
-		textSize(40);
+		textSize(100);
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem',40,80, 600);
 
-		text('Claim: Illusion of consciousness appears tricky. 😨',250,480, 15000);
+		text('Illusion meta-problem:\nConceiving of\the illusion of consciousness\nappears tricky. 😨',250,480, 15000);
+
+		noFill()
+		strokeWeight(6);
+		stroke('#fbd229'); 
+		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 15){
-		fill(255);
-		textSize(40);
-		textFont('Helvetica-Bold');
-		text('Illusion example 1/3',40,80, 600);
-
-		image(illusion1, 500, 280, 469, 330);
-	}
-	if(slideNum === 16){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -353,16 +350,26 @@ function showSlide(){
 		textSize(20);
 		textFont('Helvetica-Bold');	
 		text('B',830, 270, 400);
+
+		noFill()
+		strokeWeight(6);
+		stroke('#FF00DB'); 
+		rect(0, 0, windowWidth, windowHeight);
 	}
-	if(slideNum === 17){
+	if(slideNum === 16){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
 
 		image(illusion2, 550, 300, 450, 313);
+
+		noFill()
+		strokeWeight(6);
+		stroke('#FF00DB'); 
+		rect(0, 0, windowWidth, windowHeight);
 	}
-	if(slideNum === 18){
+	if(slideNum === 17){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -377,7 +384,7 @@ function showSlide(){
 		text('An object 🥛',600,500, 1000);
 		text('Representations 🧠',600,600, 1000);
 	}
-	if(slideNum === 19){
+	if(slideNum === 18){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -390,7 +397,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(😻P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,450, 1500);
 	}
-	if(slideNum === 20){
+	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -403,7 +410,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,450, 1500);
 	}
-	if(slideNum === 21){
+	if(slideNum === 20){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -413,7 +420,7 @@ function showSlide(){
 		text('property illusion 😻, existence illusion 🙀',330,380, 1500);
 		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
-	if(slideNum === 22){
+	if(slideNum === 21){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -428,7 +435,7 @@ function showSlide(){
 		text('3. Framework 🖼',700,600, 1000);
 		text('4. Empirical 🔬',700,700, 1000);
 	}
-	if(slideNum === 23){
+	if(slideNum === 22){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
