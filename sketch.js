@@ -158,6 +158,11 @@ function showSlide(){
 		text('¬ rock',850,450, 400);
 	}
 	if(slideNum === 8){
+		noFill()
+		strokeWeight(8);
+		stroke('#fbd229'); 
+		rect(0, 0, windowWidth, windowHeight);
+
 		noStroke();
 		fill(255);
 		textSize(40);
@@ -215,6 +220,12 @@ function showSlide(){
   		}
 	}
 	if(slideNum === 9){
+		noFill()
+		strokeWeight(8);
+		stroke('#FF00DB'); 
+		rect(0, 0, windowWidth, windowHeight);
+
+		
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
