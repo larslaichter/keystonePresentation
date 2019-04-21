@@ -201,6 +201,7 @@ function showSlide(){
 		textSize(100);
 		textFont('Helvetica-Bold');
 		text('👩🏽‍🔬', xpos, ypos, 100);
+  		text('🌹', windowWidth - windowWidth/3, windowHeight - windowHeight/3, 100);
 
   		if(filterOn==true){
   			noFill()
@@ -210,17 +211,7 @@ function showSlide(){
 			noStroke();
 
   			filter(GRAY);
-  		} else {
-  			if(frameNum % 20 == 0){
-  				flowerX = random(0, windowWidth);
-  				flowerY = random(0, windowHeight);
-  			} 
-
-  			fill(255);
-			textSize(100);
-			textFont('Helvetica-Bold');
-  			text('🌹', flowerX, flowerY, 100);
-  		}
+  		} 
 
   		noFill()
 		strokeWeight(16);
