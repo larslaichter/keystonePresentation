@@ -167,7 +167,7 @@ function showSlide(){
 		}
 
 		fill(255);
-		textSize(60);
+		textSize(100);
 		textFont('Helvetica-Bold');
 		text('👩🏽‍🔬', xpos, ypos, 100);
 
@@ -213,7 +213,7 @@ function showSlide(){
 		
 
 		fill(255);
-		textSize(60);
+		textSize(100);
 		textFont('Helvetica-Bold');
 		text('🗿', xpos, ypos, 100);
 	}
