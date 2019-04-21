@@ -132,7 +132,7 @@ function showSlide(){
 	}
 	if(slideNum === 7){
 		noFill()
-		strokeWeight(2);
+		strokeWeight(3);
 		stroke('#fbd229'); 
 		rect(190, 230, 400, 400);
 
@@ -149,7 +149,7 @@ function showSlide(){
 		text('A',210, 270, 400);
 
 		noFill()
-		strokeWeight(2);
+		strokeWeight(3);
 		stroke('#FF00DB');
 		rect(810, 230, 400, 400);
 		
@@ -207,7 +207,7 @@ function showSlide(){
 
   		if(filterOn==true){
   			noFill()
-			strokeWeight(2);
+			strokeWeight(3);
 			stroke(255);
 			rect(520, 250, 400, 400);
 			noStroke();
@@ -216,13 +216,13 @@ function showSlide(){
   		} 
 
   		noFill()
-		strokeWeight(4);
+		strokeWeight(6);
 		stroke('#fbd229'); 
 		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 9){
 		noFill()
-		strokeWeight(4);
+		strokeWeight(6);
 		stroke('#FF00DB'); 
 		rect(0, 0, windowWidth, windowHeight);
 
