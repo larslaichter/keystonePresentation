@@ -259,7 +259,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy problems\nvs.\nThe hard problem',210,(windowHeight/2)-150, 1000);
+		text('Easy problems\nvs.\nThe hard problem',250,(windowHeight/2)-100, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
@@ -273,7 +273,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('The illusion problem:\nConscious experience \nis an illusion. 🤩',280,200, 15000);
+		text('Illusionism:\nConscious experience \nis an illusion. 🤩',250,300, 15000);
 	}
 	if(slideNum === 13){
 		noFill()
@@ -311,17 +311,15 @@ function showSlide(){
 		text('¬ con- ceivable',850,450, 400);
 	}
 	if(slideNum === 14){
-		fill(255);
-		textSize(100);
-		textFont('Helvetica-Bold');
-		text('Illusion meta-problem',40,80, 600);
-
-		text('Illusion meta-problem:\nConceiving of\the illusion of consciousness\nappears tricky. 😨',250,480, 15000);
-
 		noFill()
 		strokeWeight(6);
 		stroke('#fbd229'); 
 		rect(0, 0, windowWidth, windowHeight);
+
+		fill(255);
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('Illusion meta-problem:\nConceiving of the\nillusion of consciousness\nappears tricky. 😨',250,300, 15000);
 	}
 	if(slideNum === 15){
 		fill(255);
@@ -357,17 +355,17 @@ function showSlide(){
 		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 16){
+		noFill()
+		strokeWeight(6);
+		stroke('#FF00DB'); 
+		rect(0, 0, windowWidth, windowHeight);
+
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 3/3',40,80, 600);
 
 		image(illusion2, 550, 300, 450, 313);
-
-		noFill()
-		strokeWeight(6);
-		stroke('#FF00DB'); 
-		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 17){
 		fill(255);
