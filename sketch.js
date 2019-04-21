@@ -132,7 +132,7 @@ function showSlide(){
 	}
 	if(slideNum === 7){
 		noFill()
-		strokeWeight(8);
+		strokeWeight(2);
 		stroke('#fbd229'); 
 		rect(190, 230, 400, 400);
 
@@ -149,7 +149,7 @@ function showSlide(){
 		text('A',210, 270, 400);
 
 		noFill()
-		strokeWeight(8);
+		strokeWeight(2);
 		stroke('#FF00DB');
 		rect(810, 230, 450, 400);
 		
@@ -189,13 +189,15 @@ function showSlide(){
 			  	ydirection *= -1;
 			} */
 		} else {
-			if (xpos > windowWidth - 50 || xpos < 50) {
+			if (xpos > windowWidth - 100 || xpos < 100) {
 	    		xdirection *= -1;
 			}
-			if (ypos > windowHeight - 50|| ypos < 50) {
+			if (ypos > windowHeight - 100|| ypos < 100) {
 			  	ydirection *= -1;
 			}
 		}
+
+		rect(xpos,ypos,3,3)
 
 		fill(255);
 		textSize(100);
@@ -205,7 +207,7 @@ function showSlide(){
 
   		if(filterOn==true){
   			noFill()
-			strokeWeight(8);
+			strokeWeight(2);
 			stroke(255);
 			rect(520, 250, 400, 400);
 			noStroke();
@@ -214,13 +216,13 @@ function showSlide(){
   		} 
 
   		noFill()
-		strokeWeight(16);
+		strokeWeight(4);
 		stroke('#fbd229'); 
 		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 9){
 		noFill()
-		strokeWeight(16);
+		strokeWeight(4);
 		stroke('#FF00DB'); 
 		rect(0, 0, windowWidth, windowHeight);
 
