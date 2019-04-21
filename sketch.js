@@ -117,18 +117,18 @@ function showSlide(){
 
 		noStroke();
 		fill(0,0,0,127); 
-		rect((windowWidth/2)-150,(windowHeight/2), 100, 100);
+		rect((windowWidth/2)-150,(windowHeight/2)-100, 100, 100);
 	}
 	if(slideNum === 6){
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('🤷‍♂️🐷👾',(windowWidth/2)-150,(windowHeight/2), 1000);
+		text('🤷‍♂️🐷🤖',(windowWidth/2)-150,(windowHeight/2), 1000);
 
 		noStroke();
 		fill(0,0,0,127); 
-		rect((windowWidth/2)-150,(windowHeight/2), 200, 100);
+		rect((windowWidth/2)-150,(windowHeight/2)-100, 200, 100);
 	}
 	if(slideNum === 7){
 		noFill()
