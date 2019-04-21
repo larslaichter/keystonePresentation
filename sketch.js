@@ -14,6 +14,7 @@ let yspeed = 2.2; // Speed of the Mary
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
 
+let flowerX, flowerY;
 		
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -179,10 +180,15 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
+  			if(frameNum % 100){
+  				flowerX = random(0, windowWidth);
+  				flowerY = random(0, windowHeight);
+  			} 
+
   			fill(255);
 			textSize(60);
 			textFont('Helvetica-Bold');
-  			text('🌺', random(0, windowWidth), random(0, windowHeight), 60);
+  			text('🌺', flowerX, flowerY, 60);
   		}
 	}
 	if(slideNum === 5){
