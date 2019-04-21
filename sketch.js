@@ -59,8 +59,8 @@ function keyPressed() {
 			slideNum--;
 		}
 	} else if (keyCode === 65) {	//A
-		if (slideNum === 3){
-			slideNum = 4; 
+		if (slideNum === 6){
+			slideNum = 7; 
 		}
 		if (slideNum === 9){
 			slideNum = 10; 
@@ -71,8 +71,8 @@ function keyPressed() {
 			if(playingB == true){playingB = !playingB;} 
 		}
 	} else if (keyCode === 66) {	//B
-		if (slideNum === 3){
-			slideNum = 5; 
+		if (slideNum === 6){
+			slideNum = 8; 
 		}
 		if (slideNum === 9){
 			slideNum = 11; 
@@ -82,7 +82,7 @@ function keyPressed() {
 			playingB = !playingB;
 			if(playingA == true){playingA = !playingA;} 
 		}
-	} else if (keyCode === 70) {	//B
+	} else if (keyCode === 70) {	//F
 		if (slideNum === 4){
 			filterOn = !filterOn; 
 		}
@@ -99,10 +99,33 @@ function showSlide(){
 		console.log("Slide: "+slideNum);
 		image(slide2, 0, 0);
 	}
-	if(slideNum === 3){
+	if(slideNum === 3){	
+	}
+	if(slideNum === 4){
+		fill(255);
+		noStroke();
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('🐷',410,(windowHeight/2)-35, 1000);
+	}
+	if(slideNum === 5){
+		fill(255);
+		noStroke();
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('🐷🤖',410,(windowHeight/2)-35, 1000);
+	}
+	if(slideNum === 6){
+		fill(255);
+		noStroke();
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('🐷🤖🤷‍♂️',410,(windowHeight/2)-35, 1000);
+	}
+	if(slideNum === 7){
 		noFill()
 		strokeWeight(8);
-		stroke('#00C9FF');
+		stroke('#fbd229'); 
 		rect(190, 230, 400, 400);
 
 		fill(255);	
@@ -134,7 +157,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('¬ rock',850,450, 400);
 	}
-	if(slideNum === 4){
+	if(slideNum === 8){
 		noStroke();
 		fill(255);
 		textSize(40);
@@ -158,10 +181,10 @@ function showSlide(){
 			  	ydirection *= -1;
 			} */
 		} else {
-			if (xpos > windowWidth - 60 || xpos < 30) {
+			if (xpos > windowWidth - 50 || xpos < 50) {
 	    		xdirection *= -1;
 			}
-			if (ypos > windowHeight - 10|| ypos < 30) {
+			if (ypos > windowHeight - 50|| ypos < 50) {
 			  	ydirection *= -1;
 			}
 		}
@@ -191,7 +214,7 @@ function showSlide(){
   			text('🌺', flowerX, flowerY, 100);
   		}
 	}
-	if(slideNum === 5){
+	if(slideNum === 9){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -217,7 +240,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('🗿', xpos, ypos, 100);
 	}
-	if(slideNum === 6){
+	if(slideNum === 10){
 		whatIsItLike.stop()
 
 		fill(255);
@@ -226,7 +249,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('(easy 😎) × (hard 🤯)',410,(windowHeight/2)-35, 1000);
 	}
-	if(slideNum === 7){
+	if(slideNum === 11){
 		whatIsItLike.play();
 		image(whatIsItLike, 0, 0);
   		//whatIsItLike.volume(0);
@@ -237,7 +260,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('What is it like? 🦇',660,(windowHeight)-70, 1000);
 	}
-	if(slideNum === 8){
+	if(slideNum === 12){
 		whatIsItLike.stop()
 
 		fill(255);
@@ -247,10 +270,10 @@ function showSlide(){
 
 		text('Claim: Conscious experience is an illusion. 🤩',280,480, 15000);
 	}
-	if(slideNum === 9){
+	if(slideNum === 13){
 		noFill()
 		strokeWeight(8);
-		stroke('#00C9FF');
+		stroke('#fbd229');
 		rect(190, 230, 400, 400);
 
 		fill(255);	
@@ -282,7 +305,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('¬ con- ceivable',850,450, 400);
 	}
-	if(slideNum === 10){
+	if(slideNum === 14){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -290,7 +313,7 @@ function showSlide(){
 
 		text('Claim: Illusion of consciousness appears tricky. 😨',250,480, 15000);
 	}
-	if(slideNum === 11){
+	if(slideNum === 15){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -298,7 +321,7 @@ function showSlide(){
 
 		image(illusion1, 500, 280, 469, 330);
 	}
-	if(slideNum === 12){
+	if(slideNum === 16){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -326,7 +349,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('B',830, 270, 400);
 	}
-	if(slideNum === 13){
+	if(slideNum === 17){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -334,7 +357,7 @@ function showSlide(){
 
 		image(illusion2, 550, 300, 450, 313);
 	}
-	if(slideNum === 14){
+	if(slideNum === 18){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -349,7 +372,7 @@ function showSlide(){
 		text('An object 🥛',600,500, 1000);
 		text('Representations 🧠',600,600, 1000);
 	}
-	if(slideNum === 15){
+	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -362,7 +385,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(😻P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,450, 1500);
 	}
-	if(slideNum === 16){
+	if(slideNum === 20){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -375,7 +398,7 @@ function showSlide(){
 		text('Tools: an agent 😺, an object 🥛, representations 🧠',180,350, 1500);
 		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,450, 1500);
 	}
-	if(slideNum === 17){
+	if(slideNum === 21){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -385,7 +408,7 @@ function showSlide(){
 		text('property illusion 😻, existence illusion 🙀',330,380, 1500);
 		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
 	}
-	if(slideNum === 18){
+	if(slideNum === 22){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -400,7 +423,7 @@ function showSlide(){
 		text('3. Framework 🖼',700,600, 1000);
 		text('4. Empirical 🔬',700,700, 1000);
 	}
-	if(slideNum === 19){
+	if(slideNum === 23){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -421,8 +444,6 @@ NOTES
 
 TODO: 
 - clarify physical vs non-physical
-- get rid of flashing options 
-- make flowers not flash 
 - make fonts larger 
 - clarify what terms are mine 
 - put color rectangle around option slides 
