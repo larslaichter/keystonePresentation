@@ -258,8 +258,9 @@ function showSlide(){
 		fill(255);
 		noStroke();
 		textSize(100);
+		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('easy × hard',150,(windowHeight/2)-35, 1000);
+		text('Easy Problems\n×\nThe Hard Problem',150,(windowHeight/2)-35, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
