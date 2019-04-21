@@ -197,8 +197,6 @@ function showSlide(){
 			}
 		}
 
-		rect(xpos,ypos,3,3)
-
 		fill(255);
 		textSize(100);
 		textFont('Helvetica-Bold');
@@ -260,7 +258,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy Problems\n×\nThe Hard Problem',150,(windowHeight/2)-35, 1000);
+		text('Easy Problems\nvs.\nThe Hard Problem',200,(windowHeight/2), 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
