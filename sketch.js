@@ -148,8 +148,8 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		if(filterOn==true){
- 			xpos = (windowWidth/2) - 30; 
- 			ypos = (windowHeight/2) - 30; 
+ 			xpos = (windowWidth/2) - 50; 
+ 			ypos = (windowHeight/2); 
  			/*
 	  		if (xpos > 920 - 60 || xpos < 520) {
 	    		xdirection *= -1;
@@ -169,7 +169,7 @@ function showSlide(){
 		fill(255);
 		textSize(60);
 		textFont('Helvetica-Bold');
-		text('👩🏽‍🔬', xpos, ypos, 60);
+		text('👩🏽‍🔬', xpos, ypos, 100);
 
   		if(filterOn==true){
   			noFill()
