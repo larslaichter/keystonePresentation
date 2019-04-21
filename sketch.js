@@ -180,7 +180,7 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
-  			if(frameNum % 100 == 0){
+  			if(frameNum % 50 == 0){
   				flowerX = random(0, windowWidth);
   				flowerY = random(0, windowHeight);
   			} 
