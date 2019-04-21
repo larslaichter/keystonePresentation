@@ -189,10 +189,10 @@ function showSlide(){
 			  	ydirection *= -1;
 			} */
 		} else {
-			if (xpos > windowWidth - 100 || xpos < 100) {
+			if (xpos > windowWidth - 80 || xpos < 0-10) {
 	    		xdirection *= -1;
 			}
-			if (ypos > windowHeight - 100|| ypos < 100) {
+			if (ypos > windowHeight + 10 || ypos < 80) {
 			  	ydirection *= -1;
 			}
 		}
@@ -203,7 +203,7 @@ function showSlide(){
 		textSize(100);
 		textFont('Helvetica-Bold');
 		text('👩🏽‍🔬', xpos, ypos, 100);
-  		text('🌹', windowWidth - windowWidth/3, windowHeight - windowHeight/3, 100);
+  		text('🌹', windowWidth - windowWidth/4, windowHeight - windowHeight/3 -100, 100);
 
   		if(filterOn==true){
   			noFill()
