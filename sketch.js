@@ -180,15 +180,15 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
-  			if(frameNum % 1000){
+  			if(frameNum % 100 == 0){
   				flowerX = random(0, windowWidth);
   				flowerY = random(0, windowHeight);
   			} 
 
   			fill(255);
-			textSize(60);
+			textSize(100);
 			textFont('Helvetica-Bold');
-  			text('🌺', flowerX, flowerY, 60);
+  			text('🌺', flowerX, flowerY, 100);
   		}
 	}
 	if(slideNum === 5){
