@@ -117,7 +117,7 @@ function showSlide(){
 
 		noStroke();
 		fill(0,0,0,127); 
-		rect((windowWidth/2)-150,(windowHeight/2)-100, 100, 100);
+		rect((windowWidth/2)-150,(windowHeight/2)-100, 100, 120);
 	}
 	if(slideNum === 6){
 		fill(255);
@@ -128,7 +128,7 @@ function showSlide(){
 
 		noStroke();
 		fill(0,0,0,127); 
-		rect((windowWidth/2)-150,(windowHeight/2)-100, 200, 100);
+		rect((windowWidth/2)-150,(windowHeight/2)-100, 200, 120);
 	}
 	if(slideNum === 7){
 		noFill()
@@ -166,11 +166,6 @@ function showSlide(){
 		text('¬ rock',850,450, 400);
 	}
 	if(slideNum === 8){
-		noFill()
-		strokeWeight(16);
-		stroke('#fbd229'); 
-		rect(0, 0, windowWidth, windowHeight);
-
 		noStroke();
 		fill(255);
 		textSize(40);
@@ -226,6 +221,11 @@ function showSlide(){
 			textFont('Helvetica-Bold');
   			text('🌹', flowerX, flowerY, 100);
   		}
+
+  		noFill()
+		strokeWeight(16);
+		stroke('#fbd229'); 
+		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 9){
 		noFill()
