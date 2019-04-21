@@ -239,10 +239,10 @@ function showSlide(){
  		// Test to see if the shape exceeds the boundaries of the screen
  		// If it does, reverse its direction by multiplying by -1
  		
-		if (xpos > windowWidth - 60 || xpos < 30) {
+		if (xpos > windowWidth - 80 || xpos < 0-10) {
 	    	xdirection *= -1;
 		}
-		if (ypos > windowHeight - 10|| ypos < 30) {
+		if (ypos > windowHeight + 10 || ypos < 80) {
 		  	ydirection *= -1;
 		}
 		
@@ -257,20 +257,14 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(70);
+		textSize(100);
 		textFont('Helvetica-Bold');
-		text('(easy 😎) × (hard 🤯)',410,(windowHeight/2)-35, 1000);
+		text('easy × hard',150,(windowHeight/2)-35, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
-		image(whatIsItLike, 0, 0);
+		image(whatIsItLike, 0, 0, windowWidth, windowHeight);
   		//whatIsItLike.volume(0);
-
-		fill(255);
-		noStroke();
-		textSize(70);
-		textFont('Helvetica-Bold');
-		text('What is it like? 🦇',660,(windowHeight)-70, 1000);
 	}
 	if(slideNum === 12){
 		whatIsItLike.stop()
