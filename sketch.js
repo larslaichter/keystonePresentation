@@ -106,21 +106,21 @@ function showSlide(){
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('🐷',410,(windowHeight/2)-35, 1000);
+		text('🤷‍♂️',windowWidth-150,(windowHeight/2), 1000);
 	}
 	if(slideNum === 5){
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('🐷🤖',410,(windowHeight/2)-35, 1000);
+		text('🤷‍♂️🐷',windowWidth-150,(windowHeight/2), 1000);
 	}
 	if(slideNum === 6){
 		fill(255);
 		noStroke();
 		textSize(100);
 		textFont('Helvetica-Bold');
-		text('🐷🤖🤷‍♂️',410,(windowHeight/2)-35, 1000);
+		text('🤷‍♂️🐷🤖',windowWidth-150,(windowHeight/2), 1000);
 	}
 	if(slideNum === 7){
 		noFill()
