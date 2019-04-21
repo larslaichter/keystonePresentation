@@ -59,31 +59,31 @@ function keyPressed() {
 			slideNum--;
 		}
 	} else if (keyCode === 65) {	//A
-		if (slideNum === 6){
-			slideNum = 7; 
+		if (slideNum === 7){
+			slideNum = 8; 
 		}
-		if (slideNum === 9){
-			slideNum = 10; 
+		if (slideNum === 13){
+			slideNum = 14; 
 		}
-		if (slideNum === 12){
+		if (slideNum === 16){
 			illusionAudio1.play();
 			playingA = !playingA;
 			if(playingB == true){playingB = !playingB;} 
 		}
 	} else if (keyCode === 66) {	//B
-		if (slideNum === 6){
-			slideNum = 8; 
+		if (slideNum === 7){
+			slideNum = 9; 
 		}
-		if (slideNum === 9){
-			slideNum = 11; 
+		if (slideNum === 13){
+			slideNum = 15; 
 		}
-		if (slideNum === 12){
+		if (slideNum === 16){
 			illusionAudio2.play();
 			playingB = !playingB;
 			if(playingA == true){playingA = !playingA;} 
 		}
 	} else if (keyCode === 70) {	//F
-		if (slideNum === 4){
+		if (slideNum === 8){
 			filterOn = !filterOn; 
 		}
 	} 
