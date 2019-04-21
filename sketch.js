@@ -139,7 +139,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Mary',40,80, 400);
+		//text('Mary',40,80, 400);
 		
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
@@ -180,7 +180,7 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
-  			if(frameNum % 10 == 0){
+  			if(frameNum % 20 == 0){
   				flowerX = random(0, windowWidth);
   				flowerY = random(0, windowHeight);
   			} 
@@ -195,7 +195,7 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('A rock person',40,80, 400);
+		//text('A rock person',40,80, 400);
 
 		// Update the position of the shape
  		xpos = xpos + xspeed * xdirection;
