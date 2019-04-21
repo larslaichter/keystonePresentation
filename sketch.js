@@ -322,14 +322,19 @@ function showSlide(){
 		text('Illusion meta-problem:\nConceiving of the\nillusion of consciousness\nappears tricky. 😨',250,300, 15000);
 	}
 	if(slideNum === 15){
+		noFill()
+		strokeWeight(6);
+		stroke('#FF00DB'); 
+		rect(0, 0, windowWidth, windowHeight);
+
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
 		text('Illusion example 2/3',40,80, 600);
 
 		noFill()
-		strokeWeight(8);
-		stroke('#FF00DB');
+		strokeWeight(3);
+		stroke('#fbd229');
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -339,8 +344,8 @@ function showSlide(){
 		text('A',210, 270, 400);
 
 		noFill()
-		strokeWeight(8);
-		stroke('#FF00DB');
+		strokeWeight(3);
+		stroke('#fbd229');
 		rect(810, 230, 400, 400);
 		
 		fill(255);
@@ -348,11 +353,6 @@ function showSlide(){
 		textSize(20);
 		textFont('Helvetica-Bold');	
 		text('B',830, 270, 400);
-
-		noFill()
-		strokeWeight(6);
-		stroke('#FF00DB'); 
-		rect(0, 0, windowWidth, windowHeight);
 	}
 	if(slideNum === 16){
 		noFill()
