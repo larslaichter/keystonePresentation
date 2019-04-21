@@ -14,7 +14,7 @@ let yspeed = 2.2; // Speed of the Mary
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
 
-let flowerX, flowerY;
+let flowerX = 200, flowerY = 200;
 		
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -180,7 +180,7 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
-  			if(frameNum % 50 == 0){
+  			if(frameNum % 10 == 0){
   				flowerX = random(0, windowWidth);
   				flowerY = random(0, windowHeight);
   			} 
