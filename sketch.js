@@ -180,7 +180,7 @@ function showSlide(){
 
   			filter(GRAY);
   		} else {
-  			if(frameNum % 100){
+  			if(frameNum % 1000){
   				flowerX = random(0, windowWidth);
   				flowerY = random(0, windowHeight);
   			} 
@@ -215,7 +215,7 @@ function showSlide(){
 		fill(255);
 		textSize(60);
 		textFont('Helvetica-Bold');
-		text('🗿', xpos, ypos, 60);
+		text('🗿', xpos, ypos, 100);
 	}
 	if(slideNum === 6){
 		whatIsItLike.stop()
