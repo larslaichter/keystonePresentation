@@ -260,7 +260,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy problems 😎\nvs.\nThe hard problem 🤯',250,(windowHeight/2)-100, 1000);
+		text('Easy problems 😎\nvs.\nThe hard problem 🤯',250,(windowHeight/2)-100, 1500);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
@@ -336,7 +336,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		stroke('#FF00DB');
+		if(playingA){stroke('#fbd229');}else{stroke('#FF00DB');};
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -347,7 +347,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		stroke('#FF00DB');
+		if(playingB){stroke('#fbd229');}else{stroke('#FF00DB');};
 		rect(810, 230, 400, 400);
 		
 		fill(255);
