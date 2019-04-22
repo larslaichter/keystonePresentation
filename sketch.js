@@ -63,10 +63,10 @@ function keyPressed() {
 		if (slideNum === 7){
 			slideNum = 8; 
 		}
-		if (slideNum === 13){
-			slideNum = 14; 
+		if (slideNum === 14){
+			slideNum = 15; 
 		}
-		if (slideNum === 15){
+		if (slideNum === 16){
 			illusionAudio1.play();
 			playingA = !playingA;
 			if(playingB == true){playingB = !playingB;} 
@@ -75,10 +75,10 @@ function keyPressed() {
 		if (slideNum === 7){
 			slideNum = 9; 
 		}
-		if (slideNum === 13){
-			slideNum = 15; 
+		if (slideNum === 14){
+			slideNum = 16; 
 		}
-		if (slideNum === 15){
+		if (slideNum === 16){
 			illusionAudio2.play();
 			playingB = !playingB;
 			if(playingA == true){playingA = !playingA;} 
@@ -268,6 +268,13 @@ function showSlide(){
   		//whatIsItLike.volume(0);
 	}
 	if(slideNum === 12){
+		fill(255);
+		noStroke();
+		textSize(70);
+		textFont('Helvetica-Bold');
+		text('The dilemma',300,(windowHeight/2), 1000);
+	}
+	if(slideNum === 13){
 		whatIsItLike.stop()
 
 		fill(255);
@@ -276,7 +283,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusionism:\nConscious experience \nis an illusion. 🤩',230,350, 15000);
 	}
-	if(slideNum === 13){
+	if(slideNum === 14){
 		noFill()
 		strokeWeight(3);
 		stroke('#fbd229');
@@ -311,7 +318,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('¬ con- ceivable',850,450, 400);
 	}
-	if(slideNum === 14){
+	if(slideNum === 15){
 		noFill()
 		strokeWeight(6);
 		stroke('#fbd229'); 
@@ -323,7 +330,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Illusion meta-problem:\nConceiving of the illusion\nof consciousness\nappears tricky. 😨',150,300, 15000);
 	}
-	if(slideNum === 15){
+	if(slideNum === 16){
 		noFill()
 		strokeWeight(6);
 		stroke('#FF00DB'); 
@@ -356,7 +363,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');	
 		text('B',830, 270, 400);
 	}
-	if(slideNum === 16){
+	if(slideNum === 17){
 
 		fill(255);
 		textSize(100);
@@ -364,7 +371,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. –\n3. –\n4. –',230,350, 15000);
 	}
-	if(slideNum === 17){
+	if(slideNum === 18){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -379,7 +386,7 @@ function showSlide(){
 		text('An object 🥛',300,500, 1000);
 		text('Representations 🧠',300,600, 1000);
 	}
-	if(slideNum === 18){
+	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -392,7 +399,7 @@ function showSlide(){
 		//text('Property illusion 😻',180,350, 1500);
 		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',300,200, 1200);
 	}
-	if(slideNum === 19){
+	if(slideNum === 20){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -405,7 +412,7 @@ function showSlide(){
 		//text('Existence illusion 🙀',180,350, 1500);
 		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',300,200, 1500);
 	}
-	if(slideNum === 20){
+	if(slideNum === 21){
 		fill(255);
 		textSize(70);
 		textFont('Helvetica-Bold');
@@ -415,10 +422,10 @@ function showSlide(){
 		//text('Super-illusion 🤩',330,380, 1500);
 		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',300,200, 1500);
 	}
-	if(slideNum === 21){
+	if(slideNum === 22){
 		
 	}
-	if(slideNum === 22){
+	if(slideNum === 23){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -432,7 +439,7 @@ function showSlide(){
 
 		image(darcy, 700, 310, 72.6, 96.36);
 	}
-	if(slideNum === 23){
+	if(slideNum === 24){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
