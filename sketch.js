@@ -66,7 +66,7 @@ function keyPressed() {
 		if (slideNum === 13){
 			slideNum = 14; 
 		}
-		if (slideNum === 16){
+		if (slideNum === 15){
 			illusionAudio1.play();
 			playingA = !playingA;
 			if(playingB == true){playingB = !playingB;} 
@@ -78,7 +78,7 @@ function keyPressed() {
 		if (slideNum === 13){
 			slideNum = 15; 
 		}
-		if (slideNum === 16){
+		if (slideNum === 15){
 			illusionAudio2.play();
 			playingB = !playingB;
 			if(playingA == true){playingA = !playingA;} 
@@ -260,7 +260,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy problems\nvs.\nThe hard problem',250,(windowHeight/2)-100, 1000);
+		text('Easy problems 😎\nvs.\nThe hard problem 🤯',250,(windowHeight/2)-100, 1000);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
@@ -410,8 +410,8 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Property illusion 😻',180,350, 1500);
-		text('(∀😺)(∃🥛)(😻 P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,200, 1500);
+		//text('Property illusion 😻',180,350, 1500);
+		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',100,200, 1500);
 	}
 	if(slideNum === 20){
 		fill(255);
@@ -423,8 +423,8 @@ function showSlide(){
 		noStroke();
 		textSize(50);
 		textFont('Helvetica-Bold');
-		text('Existence illusion 🙀',180,350, 1500);
-		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,200, 1500);
+		//text('Existence illusion 🙀',180,350, 1500);
+		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',100,200, 1500);
 	}
 	if(slideNum === 21){
 		fill(255);
@@ -433,14 +433,14 @@ function showSlide(){
 		//text('Super-illusion 🤩',40,80, 600);
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
-		text('Super-illusion 🤩',330,380, 1500);
-		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀) )',180,200, 1500);
+		//text('Super-illusion 🤩',330,380, 1500);
+		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀) )',100,200, 1500);
 	}
 	if(slideNum === 22){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Criteria for conceivability',40,80, 1000);
+		//text('Criteria for conceivability',40,80, 1000);
 
 		fill(255);
 		noStroke();
@@ -461,11 +461,21 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('larslaichter.com/keystone',300,(windowHeight/2)-150, 1000);
+		text('Thanks to\nDarcy Otto\nQuest University',300,(windowHeight/2)-150, 1000);
 
-
-		text('Thanks to',300,(windowHeight/2), 1000);
 		image(darcy, 300, (windowHeight/2) + 150, 110, 146);
+	}
+	if(slideNum === 23){
+		fill(255);
+		textSize(40);
+		textFont('Helvetica-Bold');
+		text('👋',40,80, 600);
+
+		fill(255);
+		noStroke();
+		textSize(70);
+		textFont('Helvetica-Bold');
+		text('larslaichter.com/keystone',300,(windowHeight/2), 1000);
 	}
 }
 
