@@ -1,5 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
+	lastClick;
 	numOfSlides = 25,
 	whatIsItLike,
 	filterOn = true,
@@ -18,6 +19,8 @@ let flowerX = 200, flowerY = 200;
 		
 function setup(){
   createCanvas(windowWidth, windowHeight);
+  frameRate(30);
+
   slide1 = loadImage('slides/slide-01.png');
   slide2 = loadImage('slides/slide-02.png');
 
@@ -43,11 +46,10 @@ function draw(){
 	showSlide();
   	print(mouseIsPressed);
 
-  	//show slide number
-  	fill(255);
-  	textSize(20);
-  	textFont('Helvetica-Bold');
-	//text(slideNum, width-55, 40, 70, 80);
+  	if((lastClick+900)<frameNum){
+  		click.play();
+		console.log("You took more than 30!");
+  	}
 }
 
 function keyPressed() {
@@ -55,7 +57,7 @@ function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		if (slideNum < numOfSlides){
 			slideNum++;
-			setTimeout(startCountdown(numOfSlides), 30000);
+			lastClick = frameNum;
 		}
 	} else if (keyCode === LEFT_ARROW) {	
 		if (slideNum > 1){
@@ -92,12 +94,6 @@ function keyPressed() {
 	} 
 }
 
-function startCountdown(pastSlideNum){
-	if(pastSlideNum==numOfSlides){
-		click.play();
-		console.log("You took more than 30!");
-	}
-}
 
 function showSlide(){
 	if(slideNum === 1){
