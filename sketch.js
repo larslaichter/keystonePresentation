@@ -402,8 +402,8 @@ function showSlide(){
 		text('4. Empirical',200,700, 1000);
 
 		noStroke();
-		fill(0,0,0,127); 
-		rect(200,500, 1000, 1200);
+		fill(0,0,0,150); 
+		rect(200,400, 1000, 1200);
 	}
 	if(slideNum === 19){
 		fill(255);
@@ -469,9 +469,9 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('Acknowledgements:\nDarcy Otto\nQuest University\nQuest Winter Fellows\nValerie Fowles\nMy family\nBeach House\nDaniel Lee\nDaniel Herrmann\nMack Marcotte',300,(windowHeight/2)-150, 1000);
+		text('Acknowledgements:\nDarcy Otto\nQuest University\nQuest Winter Fellows\nValerie Fowles\nMy family\nBeach House\nDaniel Lee\nDaniel Herrmann\nMack Marcotte',300,(windowHeight/2)-160, 1000);
 
-		image(darcy, 700, 300, 72.6, 96.36);
+		image(darcy, 700, 310, 72.6, 96.36);
 	}
 	if(slideNum === 25){
 		fill(255);
@@ -483,7 +483,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('References:\nlarslaichter.com/keystone',300,(windowHeight/2)+150, 1000);
+		text('References:\nlarslaichter.com/keystone',300,(windowHeight/2)+50, 1000);
 	}
 }
 
