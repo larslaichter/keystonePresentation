@@ -260,7 +260,7 @@ function showSlide(){
 		textSize(100);
 		textAlign(CENTER);
 		textFont('Helvetica-Bold');
-		text('Easy problems 😎\nvs.\nThe hard problem 🤯',250,(windowHeight/2)-100, 1500);
+		text('Easy problems 😎\nvs.\nThe hard problem 🤯',150,(windowHeight/2)-100, 1200);
 	}
 	if(slideNum === 11){
 		whatIsItLike.play();
@@ -411,7 +411,7 @@ function showSlide(){
 		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Property illusion 😻',180,350, 1500);
-		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',0,200, 1200);
+		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',200,200, 1200);
 	}
 	if(slideNum === 20){
 		fill(255);
@@ -421,10 +421,10 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(50);
+		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Existence illusion 🙀',180,350, 1500);
-		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',100,200, 1500);
+		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',200,200, 1500);
 	}
 	if(slideNum === 21){
 		fill(255);
@@ -434,7 +434,7 @@ function showSlide(){
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		//text('Super-illusion 🤩',330,380, 1500);
-		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀) )',100,200, 1500);
+		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩 if and only if (😻 and/or 🙀) )',200,200, 1500);
 	}
 	if(slideNum === 22){
 		fill(255);
