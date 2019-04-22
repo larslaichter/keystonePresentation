@@ -423,7 +423,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('Acknowledgements:\nDarcy Otto\nQuest University\nQuest Winter Fellows\nValerie Fowles\nMy family\nBeach House\nDaniel Lee\nDaniel Herrmann\nMack Marcotte',300,(windowHeight/2)-160, 1000);
+		text("Acknowledgements:\nDarcy Otto\nQuest University\nQuest Winter Fellows\nValerie Fowles\nMy family\nBeach House\nDaniel Lee\nDaniel Herrmann\nMack Marcotte",300,(windowHeight/2)-160, 1000);
 
 		image(darcy, 700, 310, 72.6, 96.36);
 	}
