@@ -367,7 +367,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		//text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 200, 200, illusion2.width*2, illusion2.height*2);
+		image(illusion2, 250, 150, illusion2.width*2, illusion2.height*2);
 	}
 	if(slideNum === 17){
 		fill(255);
