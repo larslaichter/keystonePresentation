@@ -1,6 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
-	lastClick;
+	lastClick,
 	numOfSlides = 25,
 	whatIsItLike,
 	filterOn = true,
