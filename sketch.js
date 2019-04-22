@@ -408,10 +408,10 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(10);
+		textSize(50);
 		textFont('Helvetica-Bold');
 		text('Property illusion 😻',180,350, 1500);
-		text('(∀😺)(∃🥛)(😻 P🥛 iff\n(🧠P🥛 and ¬P🥛)\nand/or\n(🧠 ¬P🥛 and P🥛)\n)',180,200, 1500);
+		text('(∀😺)(∃🥛)(😻 P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,200, 1500);
 	}
 	if(slideNum === 20){
 		fill(255);
@@ -421,20 +421,20 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(100);
+		textSize(50);
 		textFont('Helvetica-Bold');
 		text('Existence illusion 🙀',180,350, 1500);
-		text('(∀😺)(∃🥛)(🙀🥛 iff\n(🧠E!🥛 and ¬E!🥛)\nand/or\n(🧠¬E!🥛 and E!🥛)\n)',180,200, 1500);
+		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,200, 1500);
 	}
 	if(slideNum === 21){
 		fill(255);
-		textSize(100);
+		textSize(50);
 		textFont('Helvetica-Bold');
 		//text('Super-illusion 🤩',40,80, 600);
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		text('Super-illusion 🤩',330,380, 1500);
-		text('(∀😺)(∃🥛)(🤩 iff\n(😻 and/or 🙀)\n)',180,200, 1500);
+		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀) )',180,200, 1500);
 	}
 	if(slideNum === 22){
 		fill(255);
@@ -465,7 +465,7 @@ function showSlide(){
 
 
 		text('Thanks to',300,(windowHeight/2), 1000);
-		image(darcy, 300, (windowHeight/2) + 150, 70, darcy.heigh);
+		image(darcy, 300, (windowHeight/2) + 150, 110, 146);
 	}
 }
 
