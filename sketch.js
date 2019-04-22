@@ -47,6 +47,7 @@ function draw(){
   	print(mouseIsPressed);
 
   	if((lastClick+900)<frameNum && lastClickPlayed == false){
+  		click.volume(0.5);
   		click.play();
 		console.log("You took more than 30!");
 		lastClickPlayed = true;
