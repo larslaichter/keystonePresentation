@@ -366,10 +366,10 @@ function showSlide(){
 	if(slideNum === 17){
 
 		fill(255);
-		textSize(100);
+		textSize(70);
 		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. –\n3. –\n4. –',230,350, 15000);
+		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. ––––––––\n3. ––––––––\n4. ––––––––',200,200, 15000);
 	}
 	if(slideNum === 18){
 		fill(255);
