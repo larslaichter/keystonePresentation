@@ -408,10 +408,10 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(50);
+		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Property illusion 😻',180,350, 1500);
-		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 iff\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',100,200, 1500);
+		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',0,200, 1200);
 	}
 	if(slideNum === 20){
 		fill(255);
