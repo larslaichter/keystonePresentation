@@ -117,7 +117,7 @@ function showSlide(){
 		text('🤷‍♂️🐷',(windowWidth/2)-150,(windowHeight/2), 1000);
 
 		noStroke();
-		fill(0,0,0,127); 
+		fill(0,0,0,180); 
 		rect((windowWidth/2)-150,(windowHeight/2)-100, 100, 120);
 	}
 	if(slideNum === 6){
@@ -128,7 +128,7 @@ function showSlide(){
 		text('🤷‍♂️🐷🤖',(windowWidth/2)-150,(windowHeight/2), 1000);
 
 		noStroke();
-		fill(0,0,0,127); 
+		fill(0,0,0,180); 
 		rect((windowWidth/2)-150,(windowHeight/2)-100, 200, 120);
 	}
 	if(slideNum === 7){
@@ -402,8 +402,8 @@ function showSlide(){
 		text('4. Empirical',200,700, 1000);
 
 		noStroke();
-		fill(0,0,0,150); 
-		rect(200,400, 1000, 1200);
+		fill(0,0,0,180); 
+		rect(200,405, 1000, 1200);
 	}
 	if(slideNum === 19){
 		fill(255);
