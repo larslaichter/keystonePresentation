@@ -55,7 +55,7 @@ function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		if (slideNum < numOfSlides){
 			slideNum++;
-			startCountdown();
+			setTimeout(startCountdown(numOfSlides), 30000);
 		}
 	} else if (keyCode === LEFT_ARROW) {	
 		if (slideNum > 1){
@@ -92,8 +92,10 @@ function keyPressed() {
 	} 
 }
 
-function startCountdown(){
-	click.play();
+function startCountdown(pastSlideNum){
+	if(pastSlideNum==numOfSlides){
+		click.play();
+	}
 }
 
 function showSlide(){
