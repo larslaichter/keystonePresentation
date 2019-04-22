@@ -431,7 +431,7 @@ function showSlide(){
 		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Property illusion 😻',180,350, 1500);
-		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',200,200, 1200);
+		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',300,200, 1200);
 	}
 	if(slideNum === 21){
 		fill(255);
@@ -444,32 +444,20 @@ function showSlide(){
 		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Existence illusion 🙀',180,350, 1500);
-		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',200,200, 1500);
+		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',300,200, 1500);
 	}
 	if(slideNum === 22){
 		fill(255);
-		textSize(50);
+		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Super-illusion 🤩',40,80, 600);
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		//text('Super-illusion 🤩',330,380, 1500);
-		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',200,200, 1500);
+		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',300,200, 1500);
 	}
 	if(slideNum === 23){
-		fill(255);
-		textSize(40);
-		textFont('Helvetica-Bold');
-		//text('Criteria for conceivability',40,80, 1000);
-
-		fill(255);
-		noStroke();
-		textSize(100);
-		text('Conceivability criteria:',200,300, 1500);
-		text('1. Definitional',200,400, 1000);
-		text('2. Functional',200,500, 1000);
-		text('3. Framework',200,600, 1000);
-		text('4. Empirical',200,700, 1000);
+		
 	}
 	if(slideNum === 24){
 		fill(255);
@@ -481,9 +469,9 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('Thanks to\nDarcy Otto\nQuest University',300,(windowHeight/2)-150, 1000);
+		text('Acknowledgements:\nDarcy Otto\nQuest University\nQuest Winter Fellows\nValerie Fowles\nMy family\nBeach House\nDaniel Herrmann\nMack Marcotte,300,(windowHeight/2)-150, 1000);
 
-		image(darcy, 300, (windowHeight/2) + 150, 110, 146);
+		image(darcy, 700, 300, 72.6, 96.36);
 	}
 	if(slideNum === 25){
 		fill(255);
@@ -495,7 +483,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('larslaichter.com/keystone',300,(windowHeight/2), 1000);
+		text('References:\nlarslaichter.com/keystone',300,(windowHeight/2)+150, 1000);
 	}
 }
 
