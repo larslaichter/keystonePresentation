@@ -1,6 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
-	numOfSlides = 25,
+	numOfSlides = 23,
 	whatIsItLike,
 	filterOn = true,
 	playingA = false, playingB = false,
@@ -357,55 +357,9 @@ function showSlide(){
 		text('B',830, 270, 400);
 	}
 	if(slideNum === 16){
-		noFill()
-		strokeWeight(6);
-		stroke('#FF00DB'); 
-		rect(0, 0, windowWidth, windowHeight);
 
-		fill(255);
-		textSize(40);
-		textFont('Helvetica-Bold');
-		//text('Illusion example 3/3',40,80, 600);
-
-		image(illusion2, 250, 150, illusion2.width*2, illusion2.height*2);
 	}
 	if(slideNum === 17){
-		fill(255);
-		textSize(40);
-		textFont('Helvetica-Bold');
-		//text('Criteria for conceivability',40,80, 1000);
-
-		fill(255);
-		noStroke();
-		textSize(100);
-		textFont('Helvetica-Bold');
-		text('Conceivability criteria:',200,300, 1500);
-		text('1. Definitional',200,400, 1000);
-		text('2. Functional',200,500, 1000);
-		text('3. Framework',200,600, 1000);
-		text('4. Empirical',200,700, 1000);
-	}
-	if(slideNum === 18){
-		fill(255);
-		textSize(40);
-		textFont('Helvetica-Bold');
-		//text('Criteria for conceivability',40,80, 1000);
-
-		fill(255);
-		noStroke();
-		textSize(100);
-		textFont('Helvetica-Bold');
-		text('Conceivability criteria:',200,300, 1500);
-		text('1. Definitional',200,400, 1000);
-		text('2. Functional',200,500, 1000);
-		text('3. Framework',200,600, 1000);
-		text('4. Empirical',200,700, 1000);
-
-		noStroke();
-		fill(0,0,0,180); 
-		rect(200,405, 1000, 1200);
-	}
-	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -420,7 +374,7 @@ function showSlide(){
 		text('An object 🥛',300,500, 1000);
 		text('Representations 🧠',300,600, 1000);
 	}
-	if(slideNum === 20){
+	if(slideNum === 18){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -433,7 +387,7 @@ function showSlide(){
 		//text('Property illusion 😻',180,350, 1500);
 		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',300,200, 1200);
 	}
-	if(slideNum === 21){
+	if(slideNum === 19){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -446,7 +400,7 @@ function showSlide(){
 		//text('Existence illusion 🙀',180,350, 1500);
 		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',300,200, 1500);
 	}
-	if(slideNum === 22){
+	if(slideNum === 20){
 		fill(255);
 		textSize(70);
 		textFont('Helvetica-Bold');
@@ -456,10 +410,10 @@ function showSlide(){
 		//text('Super-illusion 🤩',330,380, 1500);
 		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',300,200, 1500);
 	}
-	if(slideNum === 23){
+	if(slideNum === 21){
 		
 	}
-	if(slideNum === 24){
+	if(slideNum === 22){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -473,7 +427,7 @@ function showSlide(){
 
 		image(darcy, 700, 310, 72.6, 96.36);
 	}
-	if(slideNum === 25){
+	if(slideNum === 23){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
