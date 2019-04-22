@@ -6,7 +6,7 @@ let slideNum = 1,
 	playingA = false, playingB = false,
 	slide1, slide2,
 	illusion1, illusion2, darcy,
-	illusionAudio1, illusionAudio2;
+	illusionAudio1, illusionAudio2, click;
 
 let xpos, ypos; // Starting position of Mary
 let xspeed = 2.8; // Speed of the Mary
@@ -31,6 +31,7 @@ function setup(){
 
   illusionAudio1 = loadSound('assets/muffled.wav');
   illusionAudio2 = loadSound('assets/clear.wav');
+  click = loadSound('assets/click.wav');
 
   xpos = windowWidth / 2;
   ypos = windowHeight / 2;
@@ -54,6 +55,7 @@ function keyPressed() {
 	if (keyCode === RIGHT_ARROW) {
 		if (slideNum < numOfSlides){
 			slideNum++;
+			startCountdown();
 		}
 	} else if (keyCode === LEFT_ARROW) {	
 		if (slideNum > 1){
@@ -90,6 +92,9 @@ function keyPressed() {
 	} 
 }
 
+function startCountdown(){
+	click.play();
+}
 
 function showSlide(){
 	if(slideNum === 1){
@@ -268,6 +273,8 @@ function showSlide(){
   		//whatIsItLike.volume(0);
 	}
 	if(slideNum === 12){
+		whatIsItLike.stop()
+
 		fill(255);
 		noStroke();
 		textSize(100);
@@ -275,8 +282,6 @@ function showSlide(){
 		text('The dilemma',300,(windowHeight/2), 1000);
 	}
 	if(slideNum === 13){
-		whatIsItLike.stop()
-
 		fill(255);
 		textSize(100);
 		textAlign(LEFT);
