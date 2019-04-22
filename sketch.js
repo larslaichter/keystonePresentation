@@ -5,7 +5,7 @@ let slideNum = 1,
 	filterOn = true,
 	playingA = false, playingB = false,
 	slide1, slide2,
-	illusion1, illusion2,
+	illusion1, illusion2, darcy,
 	illusionAudio1, illusionAudio2;
 
 let xpos, ypos; // Starting position of Mary
@@ -23,6 +23,7 @@ function setup(){
 
   illusion1 = loadImage('assets/illusion1.png');
   illusion2 = loadImage('assets/eye.jpg');
+  darcy = loadImage('assets/darcy.png');
 
   whatIsItLike = createVideo('assets/bat.mp4');
   whatIsItLike.size(1280, windowWidth); //windowWidth, vid.height
@@ -443,12 +444,12 @@ function showSlide(){
 
 		fill(255);
 		noStroke();
-		textSize(40);
+		textSize(100);
 		textFont('Helvetica-Bold');
-		text('1. Definitional 🎯',700,400, 1000);
-		text('2. Functional ⚙️',700,500, 1000);
-		text('3. Framework 🖼',700,600, 1000);
-		text('4. Empirical 🔬',700,700, 1000);
+		text('Tools:',300,300, 1000);
+		text('An agent 😺',300,400, 1000);
+		text('An object 🥛',300,500, 1000);
+		text('Representations 🧠',300,600, 1000);
 	}
 	if(slideNum === 23){
 		fill(255);
@@ -460,7 +461,9 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('larslaichter.com/keystone',300,(windowHeight/2), 1000);
+		text('larslaichter.com/keystone',300,(windowHeight/2)-150, 1000);
+
+		image(darcy, 100, 100, 100, 100);
 	}
 }
 
