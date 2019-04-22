@@ -1,6 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
-	lastClick,
+	lastClick=10000, lastClickPlayed = false;
 	numOfSlides = 25,
 	whatIsItLike,
 	filterOn = true,
@@ -46,9 +46,10 @@ function draw(){
 	showSlide();
   	print(mouseIsPressed);
 
-  	if((lastClick+900)<frameNum){
+  	if((lastClick+900)<frameNum && lastClickPlayed == false){
   		click.play();
 		console.log("You took more than 30!");
+		lastClickPlayed = true;
   	}
 }
 
@@ -58,6 +59,7 @@ function keyPressed() {
 		if (slideNum < numOfSlides){
 			slideNum++;
 			lastClick = frameNum;
+			lastClickPlayed = false;
 		}
 	} else if (keyCode === LEFT_ARROW) {	
 		if (slideNum > 1){
