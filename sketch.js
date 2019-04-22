@@ -1,6 +1,6 @@
 let slideNum = 1,
 	frameNum = 0,
-	numOfSlides = 23,
+	numOfSlides = 25,
 	whatIsItLike,
 	filterOn = true,
 	playingA = false, playingB = false,
@@ -270,7 +270,7 @@ function showSlide(){
 	if(slideNum === 12){
 		fill(255);
 		noStroke();
-		textSize(70);
+		textSize(100);
 		textFont('Helvetica-Bold');
 		text('The dilemma',300,(windowHeight/2), 1000);
 	}
@@ -369,7 +369,7 @@ function showSlide(){
 		textSize(70);
 		textAlign(LEFT);
 		textFont('Helvetica-Bold');
-		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. ––––––––\n3. ––––––––\n4. ––––––––',200,200, 15000);
+		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. ––––––––\n3. ––––––––\n4. ––––––––',200,300, 15000);
 	}
 	if(slideNum === 18){
 		fill(255);
@@ -397,7 +397,7 @@ function showSlide(){
 		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Property illusion 😻',180,350, 1500);
-		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 P🥛 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',300,200, 1200);
+		text('Property illusion 😻\n\n(∀😺)(∃🥛)(😻 \nif and only if\n     (🧠P🥛 and ¬P🥛)\nand/or\n     (🧠 ¬P🥛 and P🥛)\n)',300,200, 1200);
 	}
 	if(slideNum === 20){
 		fill(255);
@@ -410,7 +410,7 @@ function showSlide(){
 		textSize(70);
 		textFont('Helvetica-Bold');
 		//text('Existence illusion 🙀',180,350, 1500);
-		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀🥛\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',300,200, 1500);
+		text('Existence illusion 🙀\n\n(∀😺)(∃🥛)(🙀\nif and only if\n     (🧠E!🥛 and ¬E!🥛)\nand/or\n     (🧠¬E!🥛 and E!🥛)\n)',300,200, 1500);
 	}
 	if(slideNum === 21){
 		fill(255);
@@ -423,9 +423,20 @@ function showSlide(){
 		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',300,200, 1500);
 	}
 	if(slideNum === 22){
-		
+		fill(255);
+		textSize(70);
+		textAlign(LEFT);
+		textFont('Helvetica-Bold');
+		text('Conceivability criteria:\n1. The definitional criterion 🤩\n2. The functional criterion ⚙️\n3. The framework criterion 🖼\n4. The empirical criterion 🔬',200,300, 15000);
 	}
 	if(slideNum === 23){
+		fill(255);
+		noStroke();
+		textSize(100);
+		textFont('Helvetica-Bold');
+		text('🤷‍♂️',(windowWidth/2)-50,(windowHeight/2), 1000);
+	}
+	if(slideNum === 24){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
@@ -439,7 +450,7 @@ function showSlide(){
 
 		image(darcy, 700, 310, 72.6, 96.36);
 	}
-	if(slideNum === 24){
+	if(slideNum === 25){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
