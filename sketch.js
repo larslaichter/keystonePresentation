@@ -367,7 +367,7 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		//text('Illusion example 3/3',40,80, 600);
 
-		image(illusion2, 100, 100, illusion2.width*2, illusion2.height*2);
+		image(illusion2, 200, 200, illusion2.width*2, illusion2.height*2);
 	}
 	if(slideNum === 17){
 		fill(255);
@@ -404,14 +404,14 @@ function showSlide(){
 		fill(255);
 		textSize(40);
 		textFont('Helvetica-Bold');
-		text('Property illusion 😻',40,80, 600);
+		//text('Property illusion 😻',40,80, 600);
 
 		fill(255);
 		noStroke();
-		textSize(40);
+		textSize(10);
 		textFont('Helvetica-Bold');
 		text('Property illusion 😻',180,350, 1500);
-		text('(∀😺)(∃🥛)(😻P🥛 iff (🧠P🥛 and ¬P🥛) and/or (🧠 ¬P🥛 and P🥛))',180,450, 1500);
+		text('(∀😺)(∃🥛)(😻 P🥛 iff\n(🧠P🥛 and ¬P🥛)\nand/or\n(🧠 ¬P🥛 and P🥛)\n)',180,200, 1500);
 	}
 	if(slideNum === 20){
 		fill(255);
@@ -424,17 +424,17 @@ function showSlide(){
 		textSize(100);
 		textFont('Helvetica-Bold');
 		text('Existence illusion 🙀',180,350, 1500);
-		text('(∀😺)(∃🥛)(🙀🥛 iff (🧠E!🥛 and ¬E!🥛) and/or (🧠¬E!🥛 and E!🥛))',180,450, 1500);
+		text('(∀😺)(∃🥛)(🙀🥛 iff\n(🧠E!🥛 and ¬E!🥛)\nand/or\n(🧠¬E!🥛 and E!🥛)\n)',180,200, 1500);
 	}
 	if(slideNum === 21){
 		fill(255);
-		textSize(40);
+		textSize(100);
 		textFont('Helvetica-Bold');
 		//text('Super-illusion 🤩',40,80, 600);
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		text('Super-illusion 🤩',330,380, 1500);
-		text('(∀😺)(∃🥛)(🤩 iff (😻 and/or 🙀))',200,500, 1500);
+		text('(∀😺)(∃🥛)(🤩 iff\n(😻 and/or 🙀)\n)',180,200, 1500);
 	}
 	if(slideNum === 22){
 		fill(255);
@@ -445,11 +445,11 @@ function showSlide(){
 		fill(255);
 		noStroke();
 		textSize(100);
-		textFont('Helvetica-Bold');
-		text('Tools:',300,300, 1000);
-		text('An agent 😺',300,400, 1000);
-		text('An object 🥛',300,500, 1000);
-		text('Representations 🧠',300,600, 1000);
+		text('Conceivability criteria:',200,300, 1500);
+		text('1. Definitional',200,400, 1000);
+		text('2. Functional',200,500, 1000);
+		text('3. Framework',200,600, 1000);
+		text('4. Empirical',200,700, 1000);
 	}
 	if(slideNum === 23){
 		fill(255);
