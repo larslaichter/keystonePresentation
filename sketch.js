@@ -95,6 +95,7 @@ function keyPressed() {
 function startCountdown(pastSlideNum){
 	if(pastSlideNum==numOfSlides){
 		click.play();
+		console.log("You took more than 30!");
 	}
 }
 
