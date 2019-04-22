@@ -400,6 +400,10 @@ function showSlide(){
 		text('2. Functional',200,500, 1000);
 		text('3. Framework',200,600, 1000);
 		text('4. Empirical',200,700, 1000);
+
+		noStroke();
+		fill(0,0,0,127); 
+		rect(200,500, 1000, 1200);
 	}
 	if(slideNum === 19){
 		fill(255);
@@ -450,7 +454,7 @@ function showSlide(){
 
 		//text('Tools: an agent 😺, an object 🥛',200,300, 1500);
 		//text('Super-illusion 🤩',330,380, 1500);
-		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩 if and only if (😻 and/or 🙀) )',200,200, 1500);
+		text('Super-illusion 🤩\n\n(∀😺)(∃🥛)(🤩\nif and only if\n     (😻 and/or 🙀)\n)',200,200, 1500);
 	}
 	if(slideNum === 23){
 		fill(255);
