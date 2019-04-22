@@ -483,7 +483,7 @@ function showSlide(){
 		noStroke();
 		textSize(70);
 		textFont('Helvetica-Bold');
-		text('References:\nlarslaichter.com/keystone',300,(windowHeight/2)+50, 1000);
+		text('References:\nlarslaichter.com/keystone',300,(windowHeight/2), 1000);
 	}
 }
 
