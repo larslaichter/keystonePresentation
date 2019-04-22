@@ -463,7 +463,9 @@ function showSlide(){
 		textFont('Helvetica-Bold');
 		text('larslaichter.com/keystone',300,(windowHeight/2)-150, 1000);
 
-		image(darcy, 100, 100, 100, 100);
+
+		text('Thanks to',300,(windowHeight/2), 1000);
+		image(darcy, 300, (windowHeight/2) + 150, 70, darcy.heigh);
 	}
 }
 
