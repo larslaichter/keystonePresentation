@@ -349,7 +349,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		if(playingA){stroke('#fbd229');}else{stroke('#FF00DB');};
+		if(playingA){stroke('#FF00DB');}else{stroke('#fbd229');};
 		rect(190, 230, 400, 400);
 
 		fill(255);
@@ -360,7 +360,7 @@ function showSlide(){
 
 		noFill()
 		strokeWeight(3);
-		if(playingB){stroke('#fbd229');}else{stroke('#FF00DB');};
+		if(playingB){stroke('#FF00DB');}else{stroke('#fbd229');};
 		rect(810, 230, 400, 400);
 		
 		fill(255);
